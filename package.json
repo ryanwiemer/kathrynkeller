@@ -1,0 +1,28 @@
+{
+  "name": "Kathryn Keller Artist",
+  "version": "0.0.1",
+  "description": "A WordPress theme built for www.kathrynkellerartist.com",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanwiemer/kathrynkeller.git"
+  },
+  "author": "Ryan Wiemer",
+  "license": "No License",
+  "dependencies": {
+    "gulp": "~3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-concat": "~2.4.2",
+    "gulp-jshint": "~1.9.0",
+    "gulp-livereload": "~2.1.1",
+    "gulp-minify-css": "~0.3.11",
+    "gulp-rename": "~1.2.0",
+    "gulp-sass": "~1.1.0",
+    "gulp-uglify": "~1.0.1",
+    "gulp-util": "~3.0.1",
+    "node-bourbon": "^1.2.3",
+    "tiny-lr": "0.1.4",
+    "node-neat": "~1.3.0",
+    "node-bourbon": "~1.2.3"
+  }
+}

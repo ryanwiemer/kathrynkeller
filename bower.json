@@ -1,0 +1,25 @@
+{
+  "name": "kathrynkeller",
+  "version": "0.0.1",
+  "authors": [
+    "Ryan Wiemer <ryan@ryanwiemer.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-form": "~3.46.0",
+    "jquery-validate": "~1.13.0",
+    "jquery": "~2.1.1",
+    "responsive-nav": "~1.0.32",
+    "picturefill": "~2.2.0"
+  },
+  "resolutions": {
+    "picturefill": "~2.2.0"
+  }
+}

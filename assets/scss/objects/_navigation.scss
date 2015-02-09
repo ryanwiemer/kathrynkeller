@@ -1,0 +1,29 @@
+/* -------- *
+ * Navigation  *
+ * -------- */
+
+.site-header {
+	@include bp(medium) {
+		position: fixed;
+		@include span-columns(3);
+		background: white;
+		border-right: 1px solid $base;
+		height: 100%;
+		padding: 2em;
+	}
+}
+
+.site-header__logo {
+	font-size: 1.25em;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 25%;
+	display: inline-block;
+	margin-bottom: 2em;
+	line-height: 1.25;
+}
+
+.site-header__nav li {
+	font-family: $sans;
+	margin-bottom: .5em;
+}

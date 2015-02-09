@@ -164,10 +164,17 @@ function scripts() {
   wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/assets/js/scripts.min.js', '', '', true);
 }
 
+function home_scripts() {
+  if( is_page('home')) {
+    wp_enqueue_script( 'home',  get_template_directory_uri() . '/assets/js/slick.min.js', '', '', true);
+  }}
+
 function contact_scripts() {
   if( is_page('contact')) {
     wp_enqueue_script( 'contact',  get_template_directory_uri() . '/assets/js/contact.min.js', '', '', true);
   }}
+
   add_action( 'wp_enqueue_scripts', 'scripts');
+  add_action( 'wp_enqueue_scripts', 'home_scripts');
   add_action( 'wp_enqueue_scripts', 'contact_scripts');
 ?>

@@ -1,3 +1,22 @@
 /* ------------ *
  *  Typography  *
  * ------------ */
+
+$sans: "Source Sans Pro Regular", Helvetica, sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $sans;
+}
+
+html {
+  font-size: 100%;
+  @include bp(small) {
+    font-size: 112.5%;
+  }
+  @include bp(medium) {
+    font-size: 125%;
+  }
+  @include bp(large) {
+    //font-size: 137.5%;
+  }
+}

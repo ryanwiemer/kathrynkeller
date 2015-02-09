@@ -166,7 +166,7 @@ function scripts() {
 
 function home_scripts() {
   if( is_page('home')) {
-    wp_enqueue_script( 'home',  get_template_directory_uri() . '/assets/js/slick.min.js', '', '', true);
+    wp_enqueue_script( 'home',  get_template_directory_uri() . '/assets/js/vendor/slick.min.js', '', '', true);
   }}
 
 function contact_scripts() {

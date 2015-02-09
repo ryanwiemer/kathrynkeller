@@ -1,7 +1,7 @@
 {
-  "name": "Kathryn Keller Artist",
+  "name": "kathrynkeller",
   "version": "0.0.1",
-  "description": "A WordPress theme built for www.kathrynkellerartist.com",
+  "description": "A WordPress theme built for Kathryn Keller",
   "main": "index.php",
   "repository": {
     "type": "git",

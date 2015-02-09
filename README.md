@@ -1,8 +1,8 @@
-//README
+#README
 
-WordPress theme built for www.kathrynkellerartist.com.
+WordPress theme built for Kathryn Keller.
 
-//Tools Used
+#Tools Used
 - Gulp
 - Bourbon
 - Bourbon Neat

@@ -136,9 +136,9 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 
 //Removing Default Image Sizes Except For 'Large'
 function trickspanda_remove_default_image_sizes( $sizes) {
-  unset( $sizes['thumbnail']);
-  unset( $sizes['medium']);
-  unset( $sizes['large']);
+  //unset( $sizes['thumbnail']);
+  //unset( $sizes['medium']);
+  //unset( $sizes['large']);
   return $sizes;
 }
 add_filter('intermediate_image_sizes_advanced', 'trickspanda_remove_default_image_sizes');

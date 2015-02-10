@@ -16,7 +16,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 // Move And Minfiy Scripts From Bower
 gulp.task ('move', function() {
-    gulp.src(['bower_components/picturefill/dist/picturefill.js','bower_components/jquery/dist/jquery.js','bower_components/responsive-nav/responsive-nav.js','bower_components/jquery-validate/dist/jquery.validate.js','bower_components/jquery-form/jquery.form.js','bower_components/slick/src/slick.js'])
+    gulp.src(['bower_components/picturefill/dist/picturefill.js','bower_components/jquery/dist/jquery.js','bower_components/responsive-nav/responsive-nav.js','bower_components/jquery-validate/dist/jquery.validate.js','bower_components/jquery-form/jquery.form.js','bower_components/slick/dist/slick.js'])
 	    .pipe(uglify())
 	    .pipe(rename({suffix: '.min'}))
 	    .pipe(gulp.dest('assets/js/vendor/'))

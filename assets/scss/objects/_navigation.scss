@@ -7,7 +7,6 @@
 		position: fixed;
 		@include span-columns(3);
 		background: white;
-		border-right: 1px solid $base;
 		height: 100%;
 		padding: 2em;
 	}

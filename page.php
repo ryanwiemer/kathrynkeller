@@ -10,11 +10,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'page' ); ?>
 
-			<?php if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
-
 		<?php endwhile; // end of the loop. ?>
 
 	</main>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

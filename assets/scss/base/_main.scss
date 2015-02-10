@@ -4,6 +4,7 @@
 
 .site-main {
   background: gray;
+  height: 1000px;
   @include bp(medium) {
     @include span-columns(9);
     @include shift(3);

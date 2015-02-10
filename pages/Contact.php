@@ -5,7 +5,7 @@
 */
 get_header(); ?>
 
-<main class="container">
+<main class="site-main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

@@ -27,13 +27,16 @@ gulp.task('scripts', function() {
     gulp.src(['assets/js/scripts/*.js'])
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
+        .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('assets/js/'))
         .pipe(livereload());
 });
 
 // Concat JS
 gulp.task('concat', function() {
     gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js'])
-        .pipe(concat('scripts.min.js'))
+        .pipe(concat('global.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'));
     gulp.src(['assets/js/vendor/jquery.form.min.js','assets/js/scripts/jquery.form.settings.js','assets/js/vendor/jquery.validate.min.js'])

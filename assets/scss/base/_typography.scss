@@ -3,9 +3,14 @@
  * ------------ */
 
 $sans: "Source Sans Pro Regular", Helvetica, sans-serif;
+$serif: "Georgia", serif;
 
 h1,h2,h3,h4,h5,h6 {
   font-family: $sans;
+}
+
+body {
+  font-family: $serif;
 }
 
 html {
@@ -17,6 +22,6 @@ html {
     font-size: 125%;
   }
   @include bp(large) {
-    //font-size: 137.5%;
+    font-size: 137.5%;
   }
 }

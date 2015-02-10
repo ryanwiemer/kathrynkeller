@@ -138,7 +138,7 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 function trickspanda_remove_default_image_sizes( $sizes) {
   unset( $sizes['thumbnail']);
   unset( $sizes['medium']);
-  //unset( $sizes['large']);
+  unset( $sizes['large']);
   return $sizes;
 }
 add_filter('intermediate_image_sizes_advanced', 'trickspanda_remove_default_image_sizes');
@@ -158,15 +158,16 @@ add_action( 'init', 'register_my_menu' );
 ////////////////////////
 
 //Enqueue scripts and styles.
-function scripts() {
+function global_scripts() {
   wp_enqueue_style( 'style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
   //wp_enqueue_script( 'modernizr',  get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js');
-  wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/assets/js/scripts.min.js', '', '', true);
+  wp_enqueue_script( 'global',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
 }
 
 function home_scripts() {
   if( is_page('home')) {
-    wp_enqueue_script( 'home',  get_template_directory_uri() . '/assets/js/vendor/slick.min.js', '', '', true);
+    wp_enqueue_script( 'slick',  get_template_directory_uri() . '/assets/js/vendor/slick.min.js', '', '', true);
+    wp_enqueue_script( 'slick--settings',  get_template_directory_uri() . '/assets/js/slick--settings.min.js', '', '', true);
   }}
 
 function contact_scripts() {
@@ -174,7 +175,7 @@ function contact_scripts() {
     wp_enqueue_script( 'contact',  get_template_directory_uri() . '/assets/js/contact.min.js', '', '', true);
   }}
 
-  add_action( 'wp_enqueue_scripts', 'scripts');
+  add_action( 'wp_enqueue_scripts', 'global_scripts');
   add_action( 'wp_enqueue_scripts', 'home_scripts');
   add_action( 'wp_enqueue_scripts', 'contact_scripts');
 ?>

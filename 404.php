@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-	<main class="site-main">
+	<main class="site-content">
 
 		<header class="page__header">
 			<h2 class="page__title">404</h2>

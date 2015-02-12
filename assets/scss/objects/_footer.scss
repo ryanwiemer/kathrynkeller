@@ -1,0 +1,22 @@
+/* -------- *
+ *  Footer  *
+ * -------- */
+
+.site-footer {
+  background: $base;
+  height: 100px;
+  color: white;
+  font-family: $sans;
+  font-weight: normal;
+}
+
+.site-footer__container {
+  max-width: $container;
+  margin: 0 auto;
+  line-height: 100px;
+}
+
+.site-footer__copyright {
+  font-size: 16px;
+  float: right;
+}

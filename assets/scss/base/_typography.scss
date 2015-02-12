@@ -2,8 +2,42 @@
  *  Typography  *
  * ------------ */
 
-$sans: "Source Sans Pro Regular", Helvetica, sans-serif;
-$serif: "Georgia", serif;
+
+@font-face{
+ font-family: 'Source Sans Pro';
+ font-weight: normal;
+ font-style: normal;
+ src: url('../fonts/sourcesanspro-regular-webfont.eot');
+ src: url('../fonts/sourcesanspro-regular-webfont?#iefix') format('embedded-opentype'),
+      url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+      url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+      url('../fonts/sourcesanspro-regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+ font-family: 'Source Sans Pro';
+ font-weight: bold;
+ font-style: normal;
+ src: url('../fonts/sourcesanspro-bold-webfont.eot');
+ src: url('../fonts/sourcesanspro-bold-webfont?#iefix') format('embedded-opentype'),
+      url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+      url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+      url('../fonts/sourcesanspro-bold-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+ font-family: 'Source Serif Pro';
+ font-weight: normal;
+ font-style: normal;
+ src: url('../fonts/sourceserifpro-regular-webfont.eot');
+ src: url('../fonts/sourceserifpro-regular-webfont?#iefix') format('embedded-opentype'),
+      url('../fonts/sourceserifpro-regular-webfont.woff') format('woff'),
+      url('../fonts/sourceserifpro-regular-webfont.ttf') format('truetype'),
+      url('../fonts/sourceserifpro-regular-webfont.svg#webfont') format('svg');
+}
+
+$sans: "Source Sans Pro", Helvetica, sans-serif;
+$serif: "Source Serif Pro", "Georgia", serif;
 
 h1,h2,h3,h4,h5,h6 {
   font-family: $sans;

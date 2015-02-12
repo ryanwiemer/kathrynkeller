@@ -20,9 +20,9 @@ get_header(); ?>
 	<?php endif; ?>
 </div>
 
-<main class="site-main">
+<main class="site-content">
 	<?php while ( have_posts() ) : the_post(); ?>
-		<h2>test</h2>
+		<h2>home</h2>
 	<?php endwhile; // end of the loop. ?>
 </main>
 

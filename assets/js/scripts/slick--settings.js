@@ -1,5 +1,8 @@
-//Setting for the Slick JS Carousel on the Homepage
+//Settings for the Slick JS Carousel on the Homepage
 
 $(document).ready(function(){
-      $('.carousel').slick();
+      $('.carousel').slick({
+        infinite: true,
+        speed: 300
+      });
     });

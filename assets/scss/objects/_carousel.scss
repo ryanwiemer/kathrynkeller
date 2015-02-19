@@ -2,10 +2,6 @@
  * Carousel  *
  * -------- */
 
-
-.home .site-header {
-}
-
 .home .site-footer {
   position: fixed;
   bottom: 0;
@@ -20,18 +16,26 @@
 .carousel {
   max-width: $container;
   @extend %clearfix;
+  height: 80vh;
 }
 
 .carousel__container {
-
+  height: 100%;
+  width: 100%;
+  @extend %clearfix;
 }
 
 .carousel__image {
   @include span-columns(8);
+  @extend %clearfix;
+  height: 100%;
 }
 
 .carousel__image img {
-  //max-width: 80vh!important;
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 
 .carousel__details {

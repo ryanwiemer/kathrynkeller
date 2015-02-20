@@ -33,7 +33,7 @@ gulp.task('scripts', function() {
 
 // Concat JS
 gulp.task('concat', function() {
-    gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js'])
+    gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/general.js'])
       .pipe(concat('global.min.js'))
       .pipe(uglify())
       .pipe(gulp.dest('assets/js/'));

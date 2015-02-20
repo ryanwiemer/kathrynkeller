@@ -34,9 +34,18 @@
 }
 
 .site-header__nav ul {
-	float: right;
-	line-height: 74px;
+	display: none;
+	@include bp(medium) {
+		display: block;
+		float: right;
+		line-height: 74px;
+	}
 }
+
+.js-nav-active .site-header__nav ul {
+	display: block;
+}
+
 
 .site-header__nav li {
 	text-transform: lowercase;
@@ -44,4 +53,16 @@
 	font-family: $sans;
 	display: inline-block;
 	margin-left: 2em;
+}
+
+
+
+
+//Nav Toggle for mobile
+.nav-toggle {
+	float: right;
+	line-height: 75px;
+	@include bp(medium) {
+		display: none;
+	}
 }

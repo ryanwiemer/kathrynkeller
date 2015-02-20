@@ -1,3 +1,15 @@
 /* ---------- *
 * Animations  *
 * ----------- */
+
+.site-header__nav li a {
+  @include transition (background 100ms ease-in-out);
+ @include bp(medium) {
+   @include transition (color 100ms ease-in-out);
+ }
+}
+
+
+.site-header__logo, .nav-toggle {
+  @include transition (color 100ms ease-in-out);
+}

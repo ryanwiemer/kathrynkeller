@@ -36,6 +36,19 @@
       url('../fonts/sourceserifpro-regular-webfont.svg#webfont') format('svg');
 }
 
+
+@font-face{
+ font-family: 'Icons';
+ font-weight: normal;
+ font-style: normal;
+ src: url('../fonts/icons.eot');
+ src: url('../fonts/icons?#iefix') format('embedded-opentype'),
+      url('../fonts/icons.woff') format('woff'),
+      url('../fonts/icons.ttf') format('truetype'),
+      url('../fonts/icons.svg#webfont') format('svg');
+}
+
+$icons: "Icons";
 $sans: "Source Sans Pro", Helvetica, sans-serif;
 $serif: "Source Serif Pro", "Georgia", serif;
 

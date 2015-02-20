@@ -9,15 +9,32 @@
   font-family: $sans;
   font-weight: normal;
   clear: both;
+  font-size: 16px;
+}
+
+.site-footer a {
+  color: white;
 }
 
 .site-footer__container {
   max-width: $container;
   margin: 0 auto;
   line-height: 50px;
+  padding: 0 1em;
 }
 
 .site-footer__copyright {
-  font-size: 16px;
   float: right;
+}
+
+.site-footer__facebook {
+  float: left;
+}
+
+.site-footer__facebook:before {
+  position: relative;
+  top: 3px;
+  font-size: 20px;
+  content: "\e603";
+  font-family: $icons;
 }

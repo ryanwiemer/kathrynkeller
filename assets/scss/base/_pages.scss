@@ -2,12 +2,25 @@
  *  Pages  *
  * ------- */
 
+.page__header {
+  margin: 0 0 1em 0;
+  padding: 2em 1em;
+  text-align: center;
+}
+
 .page__title {
   font-size: 3em;
   letter-spacing: .1em;
+  text-align: center;
+  color: $base;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
+
 .page__subtitle {
-  margin: 1em 0;
   font-family: $sans;
+  text-align: center;
+  display: inline-block;
+  display: none;
 }

@@ -13,21 +13,36 @@
 	}
 }
 
+.gallery__categories {
+	margin-top: .5em;
+}
+
+
+.gallery__categories a {
+	text-decoration: underline;
+}
+
+.gallery__categories li {
+	display: inline-block;
+	margin: 0 .5em .5em .5em;
+}
 
 .gallery {
 	margin-bottom: 1em;
-	@include bp(medium) {
-	}
+	@extend %clearfix;
 }
 
 .gallery__title {
 	display: none;
 }
 
+
+
 .gallery__link {
 
 }
 
-.gallery__img {
+.gallery__image {
+	margin-bottom: .25em;
 
 }

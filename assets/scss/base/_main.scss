@@ -2,13 +2,12 @@
  *   Main  *
  * ------- */
 
- body {
-
- }
-
 .site-content {
   margin: 75px auto 0;
   padding: 1em;
   max-width: $container;
   @extend %clearfix;
+  @include bp(medium) {
+  //padding: 1em 0;
+  }
 }

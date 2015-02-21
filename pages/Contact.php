@@ -7,6 +7,11 @@ get_header(); ?>
 
 <main class="site-content">
 
+	<section class="page__header">
+		<h3 class="page__title">Contact</h3>
+		<h4 class="page__subtitle">Integer consequat hendrerit justo, ac.</h4>
+	</section>
+
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php the_content(); ?>

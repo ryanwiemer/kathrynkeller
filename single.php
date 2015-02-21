@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-	<main class="content">
+	<main class="site-content">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

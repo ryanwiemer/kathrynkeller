@@ -170,6 +170,12 @@ function home_scripts() {
     wp_enqueue_script( 'slick--settings',  get_template_directory_uri() . '/assets/js/slick--settings.min.js', '', '', true);
   }}
 
+function gallery_scripts() {
+  if( is_home()) {
+    wp_enqueue_script( 'isotope',  get_template_directory_uri() . '/assets/js/vendor/isotope.pkgd.min.js', '', '', true);
+    wp_enqueue_script( 'isotope--settings',  get_template_directory_uri() . '/assets/js/isotope--settings.min.js', '', '', true);
+  }}
+
 function contact_scripts() {
   if( is_page('contact')) {
     wp_enqueue_script( 'contact',  get_template_directory_uri() . '/assets/js/contact.min.js', '', '', true);
@@ -178,4 +184,5 @@ function contact_scripts() {
   add_action( 'wp_enqueue_scripts', 'global_scripts');
   add_action( 'wp_enqueue_scripts', 'home_scripts');
   add_action( 'wp_enqueue_scripts', 'contact_scripts');
+  add_action( 'wp_enqueue_scripts', 'gallery_scripts');
 ?>

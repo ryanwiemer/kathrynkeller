@@ -1,4 +1,4 @@
-//Settings for the Slick JS Carousel on the Homepage
+//Slick JS Settings
 
 $(document).ready(function(){
   $('.carousel').slick({

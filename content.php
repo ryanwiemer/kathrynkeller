@@ -4,7 +4,7 @@
  */
 ?>
 
-<article class="gallery" >
+<article class="gallery <?php foreach((get_the_category()) as $category) { echo $category->cat_name . '';}?>" >
 	<a class="gallery__link" href="<?php the_permalink(); ?>">
 		<?php if ( has_post_thumbnail() ) {
 			$large = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');

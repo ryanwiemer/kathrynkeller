@@ -4,12 +4,12 @@
 
 .masonry {
 	@include bp(medium) {
-		-moz-column-count: 2;
-		-moz-column-gap: 1em;
-		-webkit-column-count: 2;
-		-webkit-column-gap: 1em;
-		column-count: 2;
-		column-gap: 1em;
+		//-moz-column-count: 2;
+		//-moz-column-gap: 1em;
+		//-webkit-column-count: 2;
+		//-webkit-column-gap: 1em;
+		//column-count: 2;
+		//column-gap: 1em;
 	}
 }
 
@@ -28,6 +28,8 @@
 }
 
 .gallery {
+	//@include span-columns(6);
+	width: 50%;
 	margin-bottom: 1em;
 	@extend %clearfix;
 }

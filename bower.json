@@ -18,6 +18,7 @@
     "jquery": "~2.1.1",
     "responsive-nav": "~1.0.32",
     "picturefill": "~2.2.0",
-    "slick.js": "~1.4.1"
+    "slick.js": "~1.4.1",
+    "isotope": "~2.1.1"
   }
 }

@@ -5,8 +5,8 @@ $(document).ready(function(){
   // init Isotope
   var $container = $('.masonry').isotope({
     masonry: {
-      //columnWidth: 200,
-      //itemSelector: '.gallery'
+      //columnWidth: 50,
+      gutter: 20
     }
   });
   // filter items on button click

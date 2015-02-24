@@ -6,3 +6,15 @@ a {
   text-decoration: none;
   color: $base;
 }
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  font-family: $sans;
+  font-size: 1em;
+}

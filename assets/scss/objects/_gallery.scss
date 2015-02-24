@@ -17,22 +17,26 @@
 	margin-top: .5em;
 }
 
-
-.gallery__categories a {
+.gallery__categories button {
 	text-decoration: underline;
+}
+
+.gallery__categories button:hover {
+	color: $secondary;
 }
 
 .gallery__categories li {
 	display: inline-block;
-	margin: 0 .5em .5em .5em;
+	margin: 0 .5em .25em .5em;
 }
 
 .gallery {
-	//@include span-columns(6);
-	width: 33%;
-	//margin-bottom: 1em;
-	//margin-right: 1em;
+	width: 100%;
+	margin-bottom: 20px;
 	@extend %clearfix;
+	@include bp(medium) {
+		width: 31%;
+	}
 }
 
 .gallery__title {

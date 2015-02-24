@@ -29,8 +29,9 @@
 
 .gallery {
 	//@include span-columns(6);
-	width: 50%;
-	margin-bottom: 1em;
+	width: 33%;
+	//margin-bottom: 1em;
+	//margin-right: 1em;
 	@extend %clearfix;
 }
 

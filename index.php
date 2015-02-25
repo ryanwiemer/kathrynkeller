@@ -9,7 +9,7 @@ get_header(); ?>
 	<header class="header--gallery">
 		<h3 class="header--gallery__title">Gallery</h3>
 		<ul class="header--gallery__categories">
-			<li><button data-filter="*">All</button></li>
+			<li><button class ="filter" data-filter="all">All</button></li>
 			<?php
 			$args = array(
 			  'orderby' => 'name',
@@ -17,13 +17,13 @@ get_header(); ?>
 			  );
 			$categories = get_categories( $args );
 			foreach ( $categories as $category ) {
-				echo '<li><button data-filter=".'.$category->name .'">' . $category->name . '</button></li>';
+				echo '<li><button class ="filter" data-filter=".'.$category->name .'">' . $category->name . '</button></li>';
 			}
 			?>
 		</ul>
 	</header>
 
-	<section class="gallery">
+	<section id="Container" class="gallery">
 
 		<?php if ( have_posts() ) : ?>
 

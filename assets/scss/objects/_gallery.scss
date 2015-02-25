@@ -2,36 +2,53 @@
  * Gallery  *
  * -------- */
 
-.masonry {
-	@include bp(medium) {
-		//-moz-column-count: 2;
-		//-moz-column-gap: 1em;
-		//-webkit-column-count: 2;
-		//-webkit-column-gap: 1em;
-		//column-count: 2;
-		//column-gap: 1em;
-	}
+
+.header--gallery {
+  margin: 0 0 1em 0;
+  padding: 1em 1em;
+  text-align: center;
 }
 
-.gallery__categories {
+.header--gallery__title {
+  font-size: 3em;
+  letter-spacing: .1em;
+  text-align: center;
+  color: $base;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.header--gallery__categories {
 	margin-top: .5em;
 	font-size: .8em;
 }
 
-.gallery__categories button {
+.header--gallery__categories button {
 	text-decoration: underline;
 }
 
-.gallery__categories button:hover {
+.header--gallery__categories button:hover {
 	color: gray;
 }
 
-.gallery__categories li {
+.header--gallery__categories li {
 	display: inline-block;
 	margin: 0 .5em .25em .5em;
 }
 
+
+
+
+
+
+
+
+
+
 .gallery {
+}
+
+.project {
 	width: 100%;
 	margin-bottom: 20px;
 	@extend %clearfix;
@@ -40,17 +57,13 @@
 	}
 }
 
-.gallery__title {
+.project__title {
 	display: none;
 }
 
-
-
-.gallery__link {
-
+.project__link {
 }
 
-.gallery__image {
+.project__image {
 	margin-bottom: .25em;
-
 }

@@ -20,10 +20,11 @@
 
 .site-footer__container {
   max-width: $container;
-  padding: 30px 1em 0 0;
+  padding: 30px 1em 0;
+  @extend %clearfix;
   @include bp(medium) {
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0 1.2em;
   }
 }
 

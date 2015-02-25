@@ -6,9 +6,9 @@
 get_header(); ?>
 	<main class="site-content">
 
-	<header class="page__header">
-		<h3 class="page__title">Gallery</h3>
-		<ul class="gallery__categories">
+	<header class="header--gallery">
+		<h3 class="header--gallery__title">Gallery</h3>
+		<ul class="header--gallery__categories">
 			<li><button data-filter="*">All</button></li>
 			<?php
 			$args = array(
@@ -23,7 +23,7 @@ get_header(); ?>
 		</ul>
 	</header>
 
-	<section class="masonry">
+	<section class="gallery">
 
 		<?php if ( have_posts() ) : ?>
 

@@ -10,9 +10,6 @@
 	background: white;
 	height: 75px;
 	border-bottom: 1px solid $secondary;
-	@include bp(medium) {
-		padding: 0 1em;
-	}
 }
 
 .site-header__logo {
@@ -26,7 +23,7 @@
 	display: inline-block;
 	float: left;
 	height: 75px;
-	margin-left: 1em;
+	margin-left: .9em;
 	letter-spacing: 1px;
 }
 

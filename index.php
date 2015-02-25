@@ -6,7 +6,7 @@
 get_header(); ?>
 	<main class="site-content">
 
-	<section class="page__header">
+	<header class="page__header">
 		<h3 class="page__title">Gallery</h3>
 		<ul class="gallery__categories">
 			<li><button data-filter="*">All</button></li>
@@ -21,7 +21,7 @@ get_header(); ?>
 			}
 			?>
 		</ul>
-	</section>
+	</header>
 
 	<section class="masonry">
 

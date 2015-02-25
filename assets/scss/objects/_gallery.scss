@@ -15,6 +15,7 @@
 
 .gallery__categories {
 	margin-top: .5em;
+	font-size: .8em;
 }
 
 .gallery__categories button {
@@ -22,7 +23,7 @@
 }
 
 .gallery__categories button:hover {
-	color: $secondary;
+	color: gray;
 }
 
 .gallery__categories li {

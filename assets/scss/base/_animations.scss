@@ -10,6 +10,6 @@
 }
 
 
-.site-header__logo, .nav-toggle, .gallery__categories button {
+.site-header__logo, .nav-toggle, .gallery__categories button, .header--single__category a {
   @include transition (color 100ms ease-in-out);
 }

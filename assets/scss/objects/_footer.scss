@@ -4,34 +4,46 @@
 
 .site-footer {
   background: $base;
-  height: 50px;
-  color: white;
+  color: gray;
   font-family: $sans;
   font-weight: normal;
   clear: both;
   font-size: 16px;
-}
+  height: 100px;
+  text-align: center;
+  @include bp(medium) {
+    height: 75px;
+    line-height: 75px;
+  }
 
-.site-footer a {
-  color: white;
 }
 
 .site-footer__container {
   max-width: $container;
-  margin: 0 auto;
-  padding: 18px 1em 0;
+  padding: 30px 1em 0 0;
+  @include bp(medium) {
+    margin: 0 auto;
+    padding: 0 1em;
+  }
 }
 
 .site-footer__copyright {
-  float: right;
+  font-size: 16px;
+  margin-bottom: 5px;
+  @include bp(medium) {
+    float: right;
+    margin: 0;
+  }
 }
 
 .site-footer__facebook {
-  float: left;
-}
-
-.site-footer__facebook:before {
-  font-size: 20px;
-  content: "\e603";
-  font-family: $icons;
+  text-decoration: underline;
+  text-align: center;
+  color: gray;
+  @include bp(medium) {
+    float: left;
+  }
+  &:hover {
+    color: white;
+  }
 }

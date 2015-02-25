@@ -1,0 +1,68 @@
+/* -------- *
+ * Single  *
+ * -------- */
+
+
+.single .site-content {
+	margin: 1em auto;
+	max-width: 750px;
+	@include bp(medium) {
+		margin: 2em auto;
+	}
+}
+
+.header--single {
+	background: $secondary;
+	margin-top: 75px;
+	padding: 2em 0;
+}
+
+.header--single__title {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: .25em;
+}
+
+.header--single__category {
+	text-align: center;
+	color: gray;
+}
+
+.header--single__details {
+	max-width: 600px;
+	margin: .75em auto 0;
+	padding: 0 1em;
+	line-height: 1.4;
+
+}
+
+.header--single__details p {
+	margin-bottom: 1em;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.header--single__details a {
+	text-decoration: underline;
+	&:hover {
+		color: gray;
+	}
+}
+
+
+.single .site-content img {
+	margin-bottom: 1em;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+.single .site-content p {
+	line-height: 1.4;
+	margin-bottom: 1em;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

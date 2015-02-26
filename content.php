@@ -16,7 +16,4 @@
 			echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/img/placeholder.png"  class="project__image"/>';
 		}?>
 	</a>
-	<a class="project__link" href="<?php the_permalink(); ?>">
-		<h3 class="project__title"><?php echo the_title() ?></h3>
-	</a>
 </article>

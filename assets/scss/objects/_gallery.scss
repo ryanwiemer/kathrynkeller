@@ -36,13 +36,6 @@
 	margin: 0 .5em .25em .5em;
 }
 
-
-
-
-
-
-
-
 #Container .mix {
     display: none;
 }
@@ -59,21 +52,13 @@
 }
 
 .project {
-	width: 100%;
-	margin-bottom: .75em;
-	@extend %clearfix;
-	@include bp(medium) {
-		//width: 31%;
-	}
+  margin-bottom: 1em;
 }
 
-.project__title {
-	display: none;
+.project img{
+  vertical-align: bottom;
 }
+
 
 .project__link {
-}
-
-.project__image {
-	margin-bottom: .25em;
 }

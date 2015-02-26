@@ -14,20 +14,14 @@
 			<?php the_field('project_details'); ?>
 			</div>
 		<?php endif; ?>
-		</div>
+		<nav class="single__nav">
+			<?php previous_post_link('%link',''); ?>
+			<?php next_post_link('%link',''); ?>
+		</nav> <!--single__nav-->
 	</header>
 
 <main class="site-content">
-	<article class="single">
-		<div class="single__content">
-			<?php the_content(); ?>
-			<?php
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'kathrynkeller' ),
-					'after'  => '</div>',
-				) );
-			?>
-		</div>
-		<footer class="single__footer">
-		</footer>
-	</article>
+	<div class="single__content">
+		<?php the_content(); ?>
+	</div>
+</main>

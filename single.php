@@ -11,6 +11,4 @@ get_header(); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
-	</main>
-
 <?php get_footer(); ?>

@@ -2,7 +2,6 @@
  * Single  *
  * -------- */
 
-
 .single .site-content {
 	margin: 1em auto;
 	max-width: 750px;
@@ -14,6 +13,7 @@
 .header--single {
 	background: $secondary;
 	margin-top: 75px;
+	position: relative;
 	padding: 2em 0;
 }
 
@@ -63,4 +63,68 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+//Single Navigation
+.single__nav {
+	@extend %clearfix;
+	width: 100%;
+	position: relative;
+	top: 2em;
+	background: white;
+	border-bottom: 1px solid $secondary;
+	@include bp(medium) {
+		position: absolute;
+		display: inline-block;
+		top: 46%;
+		padding: 0 1em;
+		margin: 0;
+		border: none;
+		background: none;
+	}
+}
+
+.single__nav a[rel="prev"], .single__nav a[rel="next"] {
+	color: gray;
+	font-size: 1.5em;
+	width: 50%;
+	text-align: center;
+	padding: .5em 0;
+	background: white;
+	@include bp(medium) {
+		border: none;
+		width: auto;
+		padding: 0;
+		background: none;
+	}
+	&:hover {
+		color: $base;
+		@include bp(medium) {
+			background: none;
+		}
+	}
+}
+
+.single__nav a[rel="prev"] {
+	float: left;
+	border-right: 1px solid $secondary;
+}
+
+.single__nav a[rel="prev"]:before {
+	font-family: $icons;
+	content: "\e600";
+}
+
+.single__nav a[rel="next"] {
+	float: right;
+	border-left: 1px solid $secondary;
+}
+
+.single__nav a[rel="next"]:after {
+	font-family: $icons;
+	content: "\e601";
+}
+
+.single__nav a:nth-child(2) {
+  border-left: 0;
 }

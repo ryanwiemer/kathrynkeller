@@ -172,8 +172,8 @@ function home_scripts() {
 
 function gallery_scripts() {
   if( is_home()) {
-    wp_enqueue_script( 'mixitup',  get_template_directory_uri() . '/assets/js/vendor/jquery.mixitup.min.js', '', '', true);
-    wp_enqueue_script( 'mixitup--settings',  get_template_directory_uri() . '/assets/js/jquery.mixitup--settings.min.js', '', '', true);
+    wp_enqueue_script( 'isotope',  get_template_directory_uri() . '/assets/js/vendor/isotope.pkgd.min.js', '', '', true);
+    wp_enqueue_script( 'isotope--settings',  get_template_directory_uri() . '/assets/js/isotope--settings.min.js', '', '', true);
   }}
 
 function contact_scripts() {

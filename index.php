@@ -9,7 +9,7 @@ get_header(); ?>
 	<header class="header--gallery">
 		<h3 class="header--gallery__title">Gallery</h3>
 		<ul class="header--gallery__categories">
-			<li><button class ="filter" data-filter="all">All</button></li>
+			<li><button class ="filter" data-filter="*">All</button></li>
 			<?php
 			$args = array(
 			  'orderby' => 'name',
@@ -23,7 +23,7 @@ get_header(); ?>
 		</ul>
 	</header>
 
-	<section id="Container" class="gallery">
+	<section id="gallery">
 
 		<?php if ( have_posts() ) : ?>
 

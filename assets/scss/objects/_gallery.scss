@@ -77,3 +77,21 @@
   .project__overlay {opacity: .75;}
   .project__caption {opacity: 1;}
 }
+
+//Gallery Pagination
+.gallery__pagination a {
+  font-size: .8em;
+  text-decoration: underline;
+}
+
+.gallery__pagination {
+  @extend %clearfix;
+}
+
+.gallery__pagination .btn-pagination--prev {
+  float: right;
+}
+
+.gallery__pagination .btn-pagination--next {
+  float: left;
+}

@@ -106,25 +106,25 @@
 }
 
 .single__nav a[rel="prev"] {
-	float: left;
-	border-right: 1px solid $secondary;
+	float: right;
+	border-left: 1px solid $secondary;
 }
 
 .single__nav a[rel="prev"]:before {
 	font-family: $icons;
-	content: "\e600";
+	content: "\e601";
 }
 
 .single__nav a[rel="next"] {
-	float: right;
+	float: left;
 	border-left: 1px solid $secondary;
 }
 
 .single__nav a[rel="next"]:after {
 	font-family: $icons;
-	content: "\e601";
+	content: "\e600";
 }
 
 .single__nav a:nth-child(2) {
-  border-left: 0;
+  border-right: 0;
 }

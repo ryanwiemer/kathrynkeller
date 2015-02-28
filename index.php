@@ -41,6 +41,13 @@ get_header(); ?>
 
 	</section>
 
+	<div class="gallery__pagination">
+	  <?php
+	    next_posts_link( 'Older Projects' );
+	    previous_posts_link( 'Newer Projects' );
+	  ?>
+	</div>
+
 	</main>
 
 <?php get_footer(); ?>

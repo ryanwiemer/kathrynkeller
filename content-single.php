@@ -7,7 +7,8 @@
 	<header class="header--single">
 		<?php the_title( '<h2 class="header--single__title">', '</h2>' ); ?>
 		<p class="header--single__category">
-			<?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' ';}?>
+
+			<a href="<?php echo site_url(); ?>/gallery">Gallery</a> <span>&#187;<span> <a href="# "><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' ';}?></a>
 		</p>
 		<?php if(get_field('project_details')): ?>
 			<div class="header--single__details">

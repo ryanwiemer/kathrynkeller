@@ -22,17 +22,22 @@
 	font-size: .8em;
 }
 
-.header--gallery__categories button {
-	text-decoration: underline;
+.header--gallery__categories a {
+  padding: .25em .75em;
+  //text-decoration: underline;
 }
 
-.header--gallery__categories button:hover {
-	color: gray;
+.header--gallery__categories .current-cat a {
+  background: $secondary;
+}
+
+.header--gallery__categories a:hover {
+  background: $secondary;
+  color: gray;
 }
 
 .header--gallery__categories li {
 	display: inline-block;
-	margin: 0 .5em .25em .5em;
 }
 
 //Masonry Layout

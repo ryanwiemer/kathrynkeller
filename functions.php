@@ -171,11 +171,12 @@ function home_scripts() {
   }}
 
 function gallery_scripts() {
-  if( is_home()) {
-    wp_enqueue_script( 'isotope',  get_template_directory_uri() . '/assets/js/vendor/isotope.pkgd.min.js', '', '', true);
-    wp_enqueue_script( 'infinite-ajax-scroll',  get_template_directory_uri() . '/assets/js/vendor/jquery-ias.js', '', '', true);
-    wp_enqueue_script( 'isotope--settings',  get_template_directory_uri() . '/assets/js/isotope--settings.min.js', '', '', true);
-  }}
+  if( is_home() or is_category()) {
+    wp_enqueue_script( 'masonry',  get_template_directory_uri() . '/assets/js/vendor/masonry.pkgd.min.js', '', '', true);
+    wp_enqueue_script( 'infinte-scroll',  get_template_directory_uri() . '/assets/js/vendor/jquery.infinitescroll.js', '', '', true);
+    wp_enqueue_script( 'masonry--settings',  get_template_directory_uri() . '/assets/js/masonry--settings.min.js', '', '', true);
+  }
+}
 
 function contact_scripts() {
   if( is_page('contact')) {

@@ -20,3 +20,8 @@
 .project__overlay, .project__caption {
   @include transition (opacity 200ms ease-in-out);
 }
+
+.header--gallery__categories a {
+  @include transition (color 100ms ease-in-out);
+  @include transition (background-color 100ms ease-in-out);
+}

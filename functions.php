@@ -166,15 +166,12 @@ function global_scripts() {
 
 function home_scripts() {
   if( is_page('home')) {
-    wp_enqueue_script( 'slick',  get_template_directory_uri() . '/assets/js/vendor/slick.min.js', '', '', true);
-    wp_enqueue_script( 'slick--settings',  get_template_directory_uri() . '/assets/js/slick--settings.min.js', '', '', true);
+    wp_enqueue_script( 'home',  get_template_directory_uri() . '/assets/js/home.min.js', '', '', true);
   }}
 
 function gallery_scripts() {
   if( is_home() or is_category()) {
-    wp_enqueue_script( 'masonry',  get_template_directory_uri() . '/assets/js/vendor/masonry.pkgd.min.js', '', '', true);
-    wp_enqueue_script( 'infinte-scroll',  get_template_directory_uri() . '/assets/js/vendor/jquery.infinitescroll.js', '', '', true);
-    wp_enqueue_script( 'masonry--settings',  get_template_directory_uri() . '/assets/js/masonry--settings.min.js', '', '', true);
+    wp_enqueue_script( 'gallery',  get_template_directory_uri() . '/assets/js/gallery.min.js', '', '', true);
   }
 }
 

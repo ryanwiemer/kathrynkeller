@@ -20,27 +20,32 @@ gulp.task ('move', function() {
 	    .pipe(gulp.dest('assets/js/vendor/'));
 });
 
-// Lint JS
+//Lint JS
 gulp.task('scripts', function() {
     gulp.src(['assets/js/scripts/*.js'])
       .pipe(jshint())
       .pipe(jshint.reporter('default'))
-      .pipe(uglify())
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(gulp.dest('assets/js/'))
       .pipe(livereload());
 });
 
 // Concat JS
 gulp.task('concat', function() {
-    gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/menu.js'])
+    gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/menu--settings.js'])
       .pipe(concat('global.min.js'))
       .pipe(uglify())
       .pipe(gulp.dest('assets/js/'));
     gulp.src(['assets/js/vendor/jquery.form.js','assets/js/scripts/jquery.form.settings.js','assets/js/vendor/jquery.validate.min.js'])
-  		.pipe(concat('contact.min.js'))
+      .pipe(concat('contact.min.js'))
   		.pipe(uglify())
-  		.pipe(gulp.dest('assets/js/'));
+      .pipe(gulp.dest('assets/js/'));
+    gulp.src(['assets/js/vendor/slick.min.js','assets/js/scripts/slick--settings.js'])
+      .pipe(concat('home.min.js'))
+    	.pipe(uglify())
+    	.pipe(gulp.dest('assets/js/'));
+    gulp.src(['assets/js/vendor/masonry.pkgd.min.js','assets/js/vendor/jquery.infinitescroll.js','assets/js/scripts/masonry--settings.js'])
+      .pipe(concat('gallery.min.js'))
+    	.pipe(uglify())
+    	.pipe(gulp.dest('assets/js/'));
 });
 
 // Compile Sass & Minify CSS
@@ -59,7 +64,7 @@ gulp.task('sass', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('assets/scss/*/*.scss', ['sass'])
-    gulp.watch('assets/js/*/*.js', ['scripts', 'concat']);
+    gulp.watch('assets/js/*/*.js', ['scripts','concat']);
 });
 
 // Default Task

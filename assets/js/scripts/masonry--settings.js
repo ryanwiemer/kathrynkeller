@@ -1,21 +1,10 @@
-//Masonry Settings
+//Salvattore Settings
 
-$(window).load(function(){
-
-//Init Masonry
-$('#gallery').masonry({
-  itemSelector: '.project',
-  hiddenStyle: {opacity: 0},
-  visibleStyle: {opacity: 1},
-  transitionDuration: 0,
-});
-
-//Infinite scroll settings
-var $container = $('#gallery');
-$container.infinitescroll({
+$('#grid').infinitescroll({
   navSelector  : ".gallery__pagination",
   nextSelector : ".gallery__pagination .btn-pagination--next",
   itemSelector : ".project",
+  appendCallback: false,
   loading: {
     finished: undefined,
     finishedMsg: null,
@@ -23,14 +12,7 @@ $container.infinitescroll({
     msg: null,
     msgText: ""
   }
-
   },
-
-  // trigger Masonry as a callback when adding new items
-  function( newElements ) {
-    var $newElems = $( newElements );
-    $container.masonry( 'appended', $newElems );
-  }
-);
-
+  function(newElements) {
+    salvattore['append_elements'](document.getElementById('gallery'), newElements);
 });

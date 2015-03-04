@@ -5,7 +5,6 @@
 ?>
 
 <article class="project mix <?php foreach((get_the_category()) as $category) { echo $category->cat_name . '';}?>" >
-	<div class="project__container">
 	<a class="project__link" href="<?php the_permalink(); ?>">
 		<?php if ( has_post_thumbnail() ) {
 			$large = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
@@ -16,8 +15,5 @@
 			else {
 			echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/img/placeholder.png"  class="project__image"/>';
 		}?>
-		<div>
-		<div class="project__overlay"></div>
-		<div class="project__caption">View Project</div>
 	</a>
 </article>

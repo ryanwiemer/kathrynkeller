@@ -24,7 +24,6 @@
 
 .header--gallery__categories a {
   padding: .25em .75em;
-  //text-decoration: underline;
 }
 
 .header--gallery__categories .current-cat a {
@@ -40,48 +39,49 @@
 	display: inline-block;
 }
 
+
+
+
+
+
 //Masonry Layout
 #gallery {
   margin-bottom: 2em;
+  @extend %clear;
 }
 
 .project {
-  width: 100%;
-  position: relative;
-  @include bp(medium) {
-    width: 33.3%
-  }
-}
-
-.project__container {
-  padding: .5em;
-  text-align: center;
-}
-
-.project__caption {
-  position: absolute;
-  top: 50%;
-  left: .5em;
-  right: .5em;
-  color: white;
-  font-size: .8em;
-  opacity: 0;
-}
-
-.project__overlay {
-  background: $base;
-  position: absolute;
-  top: .5em;
-  left: .5em;
-  right: .5em;
-  bottom: .5em;
-  opacity: 0;
+  margin-bottom: 1em;
 }
 
 .project__link:hover {
   .project__overlay {opacity: .75;}
   .project__caption {opacity: 1;}
 }
+
+//(Salvattore)
+#gallery[data-columns]::before {
+  content: '1 .column.size-1of1';
+  @include bp(medium) {
+    content: '3 .column.size-1of3';
+  }
+}
+
+.column { float: left; }
+.size-1of3 { @include span-columns(4); }
+.size-1of2 { width: 50%; }
+.size-1of1 { width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
 
 //Gallery Pagination
 .gallery__pagination a {
@@ -100,5 +100,3 @@
 .gallery__pagination .btn-pagination--next {
   float: left;
 }
-
-//Infinte Scroll

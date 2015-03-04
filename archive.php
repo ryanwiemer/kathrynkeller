@@ -28,7 +28,7 @@ get_header(); ?>
 		</ul>
 	</header>
 
-	<section id="gallery">
+	<section id="gallery" data-columns>
 
 		<?php if ( have_posts() ) : ?>
 

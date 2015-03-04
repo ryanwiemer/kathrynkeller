@@ -16,10 +16,13 @@ $container.infinitescroll({
   navSelector  : ".gallery__pagination",
   nextSelector : ".gallery__pagination .btn-pagination--next",
   itemSelector : ".project",
-  msg: null,
-  msgText: null,
-  finishedMsg: "test",
-  img: null
+  loading: {
+    finished: undefined,
+    finishedMsg: null,
+    img: null,
+    msg: null,
+    msgText: ""
+  }
 
   },
 

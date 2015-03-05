@@ -14,15 +14,14 @@ get_header(); ?>
 		<?php $thumb = wp_get_attachment_image_src(get_sub_field('image'), 'thumbnail'); ?>
 
 
-		<a class="slide" href="<?php the_sub_field('link'); ?>">
-			<div class="slide__image">
-				<img srcset="<?php echo $large[0]; ?> 1500w, <?php echo $medium[0]; ?> 750w, <?php echo $thumb[0]; ?> 375w" sizes="100vw">
-			</div>
+		<a href="<?php the_sub_field('link'); ?>">
+			<div class="slide" style="background-image:url('<?php echo $large[0]; ?>');">
 
-			<div class="slide__details">
-				<h2 class="slide__title"><?php the_sub_field('title'); ?></h2>
-				<div class="slide__excerpt">
-					<?php the_sub_field('description'); ?>
+				<div class="slide__details">
+					<h2 class="slide__title"><?php the_sub_field('title'); ?></h2>
+					<div class="slide__excerpt">
+						<?php the_sub_field('description'); ?>
+					</div>
 				</div>
 			</div>
 		</a>

@@ -18,12 +18,22 @@
 
 //Carousel Slides
 .carousel {
-  position: relative;
+  height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 
-.slide {}
-.slide__image {}
+.slide {
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.slide__image img{
+  width: 100%;
+  height: auto;
+}
 
 
 .slide__details{
@@ -39,10 +49,12 @@
 
 /* Arrows */
 .slick-prev, .slick-next {
-  display: none;
+  visibility: hidden;
+  position: relative;
 }
 
 .slick-prev:before, .slick-next:before {
+  visibility: visible;
   font-family: $icons;
   position: fixed;
   top: 50%;

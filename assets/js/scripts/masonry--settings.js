@@ -3,7 +3,7 @@
 $(window).load(function(){
 
 //Init Masonry
-$('#gallery').masonry({
+$('#work').masonry({
   itemSelector: '.project',
   hiddenStyle: {opacity: 0},
   visibleStyle: {opacity: 1},
@@ -11,10 +11,10 @@ $('#gallery').masonry({
 });
 
 //Infinite scroll settings
-var $container = $('#gallery');
+var $container = $('#work');
 $container.infinitescroll({
-  navSelector  : ".gallery__pagination",
-  nextSelector : ".gallery__pagination .btn-pagination--next",
+  navSelector  : ".work__pagination",
+  nextSelector : ".work__pagination .btn-pagination--next",
   itemSelector : ".project",
   loading: {
     finished: undefined,

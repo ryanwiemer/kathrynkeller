@@ -9,18 +9,16 @@
   font-weight: normal;
   clear: both;
   font-size: 16px;
-  height: 100px;
+  height: 65px;
   text-align: center;
   @include bp(medium) {
-    height: 75px;
-    line-height: 75px;
+    line-height: 65px;
   }
-
 }
 
 .site-footer__container {
   max-width: $container;
-  padding: 32px 1em 0;
+  padding: 16px 1em 0;
   @extend %clearfix;
   @include bp(medium) {
     margin: 0 auto;

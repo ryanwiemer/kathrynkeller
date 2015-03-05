@@ -43,7 +43,7 @@ gulp.task('concat', function() {
     	.pipe(uglify())
     	.pipe(gulp.dest('assets/js/'));
     gulp.src(['assets/js/vendor/masonry.pkgd.min.js','assets/js/vendor/jquery.infinitescroll.js','assets/js/scripts/masonry--settings.js'])
-      .pipe(concat('gallery.min.js'))
+      .pipe(concat('work.min.js'))
     	.pipe(uglify())
     	.pipe(gulp.dest('assets/js/'));
 });

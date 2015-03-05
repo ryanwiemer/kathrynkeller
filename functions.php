@@ -169,9 +169,9 @@ function home_scripts() {
     wp_enqueue_script( 'home',  get_template_directory_uri() . '/assets/js/home.min.js', '', '', true);
   }}
 
-function gallery_scripts() {
+function work_scripts() {
   if( is_home() or is_category()) {
-    wp_enqueue_script( 'gallery',  get_template_directory_uri() . '/assets/js/gallery.min.js', '', '', true);
+    wp_enqueue_script( 'work',  get_template_directory_uri() . '/assets/js/work.min.js', '', '', true);
   }
 }
 
@@ -183,5 +183,5 @@ function contact_scripts() {
   add_action( 'wp_enqueue_scripts', 'global_scripts');
   add_action( 'wp_enqueue_scripts', 'home_scripts');
   add_action( 'wp_enqueue_scripts', 'contact_scripts');
-  add_action( 'wp_enqueue_scripts', 'gallery_scripts');
+  add_action( 'wp_enqueue_scripts', 'work_scripts');
 ?>

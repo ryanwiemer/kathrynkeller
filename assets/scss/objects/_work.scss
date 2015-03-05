@@ -1,15 +1,15 @@
 /* -------- *
- * Gallery  *
+ *   Work   *
  * -------- */
 
-.header--gallery {
+.header--work {
   margin: 0 0 1em 0;
   padding: 1em 1em;
   text-align: center;
 }
 
-.header--gallery__title {
-  font-size: 3em;
+.header--work__title {
+  font-size: 2.5em;
   letter-spacing: .1em;
   text-align: center;
   color: $base;
@@ -17,31 +17,30 @@
   display: inline-block;
 }
 
-.header--gallery__categories {
+.header--work__categories {
 	margin-top: .5em;
 	font-size: .8em;
 }
 
-.header--gallery__categories a {
+.header--work__categories a {
   padding: .25em .75em;
-  //text-decoration: underline;
 }
 
-.header--gallery__categories .current-cat a {
+.header--work__categories .current-cat a {
   background: $secondary;
 }
 
-.header--gallery__categories a:hover {
+.header--work__categories a:hover {
   background: $secondary;
   color: gray;
 }
 
-.header--gallery__categories li {
+.header--work__categories li {
 	display: inline-block;
 }
 
 //Masonry Layout
-#gallery {
+#work {
   margin-bottom: 2em;
 }
 
@@ -84,21 +83,19 @@
 }
 
 //Gallery Pagination
-.gallery__pagination a {
+.work__pagination a {
   font-size: .8em;
   text-decoration: underline;
 }
 
-.gallery__pagination {
+.work__pagination {
   @extend %clearfix;
 }
 
-.gallery__pagination .btn-pagination--prev {
+.work__pagination .btn-pagination--prev {
   float: right;
 }
 
-.gallery__pagination .btn-pagination--next {
+.work__pagination .btn-pagination--next {
   float: left;
 }
-
-//Infinte Scroll

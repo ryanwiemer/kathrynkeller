@@ -2,11 +2,15 @@
  * Carousel  *
  * -------- */
 
+.home .site-header {
+  //border: none;
+}
+
 .home .site-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  //display: none;
+  display: none;
 }
 
 .home .site-content {
@@ -20,9 +24,8 @@
 .carousel {
   height: 100%;
   width: 100%;
-  height: 100%;
+  //padding: 0 65px 65px 65px;
 }
-
 
 .slide {
   height: 600px;
@@ -35,14 +38,19 @@
   height: auto;
 }
 
-
 .slide__details{
-  position: fixed;
-  bottom: 150px;
-  right: 1em;
+  position: absolute;
+  bottom: 0;
+  background: $base;
+  color: white;
 }
-.slide__title{}
-.slide__excerpt{}
+.slide__title{
+  @include span-columns(4);
+  font-size: 1.5em;
+}
+.slide__excerpt{
+  @include span-columns(8);
+}
 
 
 
@@ -60,6 +68,9 @@
   top: 50%;
   color: white;
   font-size: 2em;
+  //background: rgba(255,255,255,.75);
+  height: 100%;
+  //padding: 50% .5em;
 }
 
 .slick-prev:hover, .slick-next:hover {
@@ -68,12 +79,12 @@
 
 .slick-prev:before {
   content:"\e600";
-  left: 1em;
+  left: 0;
 }
 
 .slick-next:before {
   content:"\e601";
-  right: 1em;
+  right: 0;
 }
 
 

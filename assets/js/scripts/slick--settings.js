@@ -4,7 +4,6 @@ $(document).ready(function(){
   $('.carousel').slick({
     infinite: true,
     autoplay: true,
-    fade: true,
     autoplaySpeed: 5000,
     speed: 300,
     cssEase: 'linear',

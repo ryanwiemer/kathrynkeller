@@ -6,31 +6,62 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  //display: none;
 }
 
 .home .site-content {
-
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+
+//Carousel Slides
 .carousel {
-  max-width: $container;
-  margin: 0 auto;
-
-}
-
-.carousel__container {
-  max-height: 70vh!important;
-}
-
-.carousel__image {
-  @include span-columns(8);
-  @extend %clearfix;
-  //max-height: 100vh;
+  position: relative;
 }
 
 
-.carousel__image img {
-  //max-height: 100vh;
+.slide {}
+.slide__image {}
+
+
+.slide__details{
+  position: fixed;
+  bottom: 150px;
+  right: 1em;
+}
+.slide__title{}
+.slide__excerpt{}
+
+
+
+
+/* Arrows */
+.slick-prev, .slick-next {
+  display: none;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: $icons;
+  position: fixed;
+  top: 50%;
+  color: white;
+  font-size: 2em;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  opacity: .75;
+}
+
+.slick-prev:before {
+  content:"\e600";
+  left: 1em;
+}
+
+.slick-next:before {
+  content:"\e601";
+  right: 1em;
 }
 
 
@@ -40,20 +71,6 @@
 
 
 
-
-
-.carousel__details {
-  @include span-columns(4);
-}
-
-.carousel__title {
-  font-family: $serif;
-  color: green;
-}
-
-.carousel__description {
-  font-size: .75em;
-}
 
 
 
@@ -150,15 +167,4 @@
         height: auto;
         border: 1px solid transparent;
     }
-}
-
-
-
-/* Arrows */
-.slick-prev {
-
-}
-
-.slick-next {
-
 }

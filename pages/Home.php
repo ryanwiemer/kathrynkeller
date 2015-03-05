@@ -12,20 +12,22 @@ get_header(); ?>
 		<?php $large = wp_get_attachment_image_src(get_sub_field('image'), 'large'); ?>
 		<?php $medium = wp_get_attachment_image_src(get_sub_field('image'), 'medium'); ?>
 		<?php $thumb = wp_get_attachment_image_src(get_sub_field('image'), 'thumbnail'); ?>
-		<div class="carousel__container">
-			<div class="carousel__image">
+
+
+		<a class="slide" href="<?php the_sub_field('link'); ?>">
+			<div class="slide__image">
 				<img srcset="<?php echo $large[0]; ?> 1500w, <?php echo $medium[0]; ?> 750w, <?php echo $thumb[0]; ?> 375w" sizes="100vw">
 			</div>
 
-			<div class="carousel__details">
-				<a class="carousel__title" href="<?php the_sub_field('link'); ?>">
-					<h2><?php the_sub_field('title'); ?></h2>
-				</a>
-				<div class="carousel__description">
+			<div class="slide__details">
+				<h2 class="slide__title"><?php the_sub_field('title'); ?></h2>
+				<div class="slide__excerpt">
 					<?php the_sub_field('description'); ?>
 				</div>
 			</div>
-		</div>
+		</a>
+
+
 	<?php endwhile; ?>
 	<?php endif; ?>
 </div>

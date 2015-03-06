@@ -68,46 +68,6 @@
   color: $base;
 }
 
-/* Carousel Arrows */
-.slick-prev, .slick-next {
-    position: absolute;
-    top: 43%;
-    font-size: 1.75em;
-    font-size: 2em;
-    visibility: hidden;
-    font-family: $icons;
-}
-
-.slick-prev {
-  left: .1em;
-  &:before{
-    color: rgba(255,255,255,.5);
-    content: "\e601";
-    visibility: visible;
-  }
-}
-
-.slick-next {
-  right: .1em;
-  &:after {
-    color: rgba(255,255,255,.5);
-    content: "\e602";
-    visibility: visible;
-  }
-}
-
-.slick-prev:before, .slick-next:after, .custom_paging li {
-  display: none;
-  @include bp(medium) {
-    display: inline-block;
-  }
-}
-
-
-.slid-prev:hover:before, .slick-next:hover:after {
-  color: white;
-}
-
 /* Carousel Slide Count */
 .custom_paging {
     position: absolute;
@@ -149,9 +109,6 @@
   padding: 0;
   &:focus {
       outline: none;
-  }
-  .slick-loading & {
-      background: white url(./ajax-loader.gif) center center no-repeat;
   }
   &.dragging {
       cursor: pointer;
@@ -195,10 +152,6 @@
   min-height: 1px;
   img {
       display: block;
-      &.slick-loading {
-          background: white url(./ajax-loader.gif) center center no-repeat;
-          padding-bottom: 100%;
-      }
   }
   display: none;
   &.dragging img {

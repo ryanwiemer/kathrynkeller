@@ -21,15 +21,14 @@
   @include transition (opacity 200ms ease-in-out);
 }
 
-.header--gallery__categories a {
-  @include transition (color 100ms ease-in-out);
-  @include transition (background-color 100ms ease-in-out);
-}
-
 .slide__view-work {
-  @include transition (all 300ms ease-in-out);
+  @include transition (all 100ms ease-in-out);
 }
 
-.slick-prev:before, .slick-next:before {
-  @include transition (color 100ms ease-in-out);
+.slick-prev:hover:before, .slick-next:after {
+  @include transition (all 100ms ease-in-out);
+}
+
+.header--work__categories a {
+  @include transition (all 100ms ease-in-out);
 }

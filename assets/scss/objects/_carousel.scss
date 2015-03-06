@@ -2,33 +2,25 @@
  * Carousel  *
  * -------- */
 
-.home .site-header {
-  //border: none;
-}
-
 .home .site-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   display: none;
 }
 
 .home .site-content {
   max-width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 
 //Carousel Slides
 .carousel {
-  height: 100%;
-  width: 100%;
-  //padding: 0 65px 65px 65px;
+  position: relative;
+  top: 65px;
 }
 
 .slide {
-  height: 600px;
+  height: 800px;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -38,57 +30,90 @@
   height: auto;
 }
 
-.slide__details{
+.slide__info {
   position: absolute;
-  bottom: 0;
-  background: $base;
+  bottom: 1.5em;
+  left: 1.25em;
+  @include span-columns(6);
   color: white;
 }
+
 .slide__title{
-  @include span-columns(4);
   font-size: 1.5em;
+  margin-bottom: .25em;
 }
 .slide__excerpt{
-  @include span-columns(8);
+  font-size: .8em;
+  line-height: 1.4;
 }
 
+.slide__view-work {
+  font-size: .8em;
+  font-family: $icons;
+  display: inline-block;
+  background: white;
+  color: gray;
+  padding: 8px;
+  border-radius: 50%;
+  margin-top: .5em;
+}
 
+.slide__info:hover:after {
+  margin-left: .75em;
+  color: rgba(255,255,255,1);
+  opacity: 1;
+}
 
+.slide__info:hover .slide__view-work {
+  color: $base;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
 
 /* Arrows */
 .slick-prev, .slick-next {
   visibility: hidden;
-  position: relative;
 }
 
 .slick-prev:before, .slick-next:before {
   visibility: visible;
   font-family: $icons;
-  position: fixed;
-  top: 50%;
-  color: white;
-  font-size: 2em;
-  //background: rgba(255,255,255,.75);
-  height: 100%;
-  //padding: 50% .5em;
+  position: absolute;
+  top: 43%;
+  font-size: 1.75em;
+  color: rgba(255,255,255,.5);
 }
 
-.slick-prev:hover, .slick-next:hover {
-  opacity: .75;
+.slick-prev:hover:before, .slick-next:hover:before {
+  color: white;
 }
 
 .slick-prev:before {
-  content:"\e600";
-  left: 0;
+  content:"\e601";
+  left: .35em;
 }
 
 .slick-next:before {
-  content:"\e601";
-  right: 0;
+  content:"\e602";
+  right: .225em;
 }
 
+.custom_paging {
+  position: absolute;
+  right: 2em;
+  bottom: 4em;
+}
 
+.custom_paging li {
+  color: rgba(255,255,255,.75);
+  position: absolute;
+  opacity: 0;
+}
 
+.custom_paging .slick-active {
+  opacity: 1;
+}
 
 
 

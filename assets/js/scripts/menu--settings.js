@@ -4,7 +4,7 @@ var nav = responsiveNav(".site-header__nav ul",
 {
   animate: true, // Boolean: Use CSS3 transitions, true or false
   transition: 284, // Integer: Speed of the transition, in milliseconds
-  label: "&#xe602", // String: Label for the navigation toggle
+  label: "&#xe600", // String: Label for the navigation toggle
   insert: "before", // String: Insert the toggle before or after the navigation
   customToggle: "", // Selector: Specify the ID of a custom toggle
   closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked

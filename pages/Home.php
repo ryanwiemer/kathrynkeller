@@ -16,13 +16,13 @@ get_header(); ?>
 
 		<a href="<?php the_sub_field('link'); ?>">
 			<div class="slide" style="background-image:url('<?php echo $large[0]; ?>');">
-
-				<div class="slide__details">
-					<h2 class="slide__title"><?php the_sub_field('title'); ?></h2>
-					<div class="slide__excerpt">
-						<?php the_sub_field('description'); ?>
-					</div>
-				</div>
+					<div class="slide__info">
+					  <h2 class="slide__title"><?php the_sub_field('title'); ?></h2>
+					  <p class="slide__excerpt">
+						  <?php the_sub_field('description'); ?>
+					  </p>
+						<div class="slide__view-work">&#xe603;</div>
+				  </div>
 			</div>
 		</a>
 

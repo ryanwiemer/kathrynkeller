@@ -14,21 +14,26 @@
 
 /* Carousel Slides */
 .carousel {
-  position: relative;
   top: 65px;
 }
 
+
 .slide {
+  overflow: hidden;
+}
+
+.slide__image {
   height: 100vh;
   margin-top: -65px;
   width: 100%;
+  cursor: move;
   background-size: cover;
   background-position: center center;
-  cursor: move;
+  transform: scale(1.5);
 }
 
 .slide__info {
-  position: absolute;
+  position: fixed;
   bottom: 1.5em;
   left: 1.25em;
   color: rgba(255,255,255,.75);

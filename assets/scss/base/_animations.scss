@@ -39,7 +39,7 @@
 .slide__image {
   animation: none;
   @include bp (medium) {
-    animation:move 40s ease infinite; /* Change this to alternate to stop the loop. */
+    //animation:move 40s ease infinite; /* Change this to alternate to stop the loop. */
   }
 }
 

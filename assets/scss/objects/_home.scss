@@ -17,7 +17,6 @@
   top: 65px;
 }
 
-
 .slide {
   overflow: hidden;
 }
@@ -26,10 +25,9 @@
   height: 100vh;
   margin-top: -65px;
   width: 100%;
-  cursor: move;
   background-size: cover;
   background-position: center center;
-  transform: scale(1.5);
+  //transform: scale(1.05);
 }
 
 .slide__info {
@@ -90,6 +88,30 @@
 }
 
 //Slide Arrows
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-family: $icons;
+  color: rgba(255,255,255,.75);
+  font-size: 2em;
+  padding: 0;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: white;
+}
+
+.slick-prev {
+  left: 1em;
+}
+
+.slick-next {
+  right: 1em;
+}
+
+
 
 
 /* Slick JS Settings- Don't touch! */

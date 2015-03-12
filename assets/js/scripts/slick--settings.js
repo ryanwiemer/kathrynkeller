@@ -4,7 +4,9 @@ $(document).ready(function(){
   $('.carousel').slick({
     infinite: true,
     autoplay: true,
-    arrows: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev">&#xe601;</button>',
+    nextArrow: '<button type="button" class="slick-next">&#xe602;</button>',
     autoplaySpeed: 10000,
     speed: 450,
     cssEase: 'linear',

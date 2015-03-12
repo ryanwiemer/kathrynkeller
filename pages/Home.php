@@ -25,14 +25,10 @@ get_header(); ?>
 				</div>
 			</a>
 		</figure>
-
 	<?php endwhile; ?>
 	<?php endif; ?>
 </div>
-</main>
 
-
-</div>
 </main>
 
 <?php get_footer(); ?>

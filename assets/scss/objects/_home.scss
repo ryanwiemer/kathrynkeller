@@ -74,12 +74,19 @@
 /* Carousel Slide Count */
 .custom_paging {
     position: absolute;
-    right: 2.25em;
-    bottom: 2.25em;
+    right: 5.5em;
+    bottom: 3.5em;
     li {
-      color: rgba(255,255,255,.75);
+      //color: rgba(255,255,255,.75);
+      color: gray;
       position: absolute;
       opacity: 0;
+      border: 1px solid white;
+      border-radius: 2px;
+      line-height: 50px;
+      height: 50px;
+      padding: 0 .5em;
+      background: rgba(255,255,255,.75);
     }
 }
 
@@ -88,26 +95,35 @@
 }
 
 //Slide Arrows
-
 .slick-prev, .slick-next {
   position: absolute;
-  top: 0;
-  height: 100%;
+  //height: 100%;
   font-family: $icons;
-  color: rgba(255,255,255,.75);
-  font-size: 2em;
+  //color: rgba(255,255,255,.75);
+  color: gray;
+  font-size: 1em;
   padding: 0;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: .5em;
+  height: 50px;
+  background: rgba(255,255,255,.75);
 }
 
 .slick-prev:hover, .slick-next:hover {
-  color: white;
+  color: $base;
+  background: white;
 }
 
 .slick-prev {
-  left: 1em;
+  //left: .62em;
+  bottom: 1em;
+  right: 5.45em;
 }
 
 .slick-next {
+  //right: .4em;
+  bottom: 1em;
   right: 1em;
 }
 

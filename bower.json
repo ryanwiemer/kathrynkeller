@@ -20,6 +20,8 @@
     "picturefill": "~2.2.0",
     "slick.js": "~1.4.1",
     "masonry": "~3.2.2",
-    "jquery-infinite-scroll": "~2.1.0"
+    "jquery-infinite-scroll": "~2.1.0",
+    "breakpoints": "xoxco/breakpoints",
+    "flickity": "~1.0.0"
   }
 }

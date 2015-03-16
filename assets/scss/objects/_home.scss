@@ -1,0 +1,168 @@
+/* -------- *
+ *   Home   *
+ * -------- */
+
+.home .site-footer {
+  display: none;
+}
+
+.home .site-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Carousel Slides */
+.carousel {
+  position: relative;
+}
+
+.slide {
+  margin: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.slide__info {
+  padding: .5em 1em;
+  position: absolute;
+  text-align: left;
+  bottom: 1.5em;
+  left: 1em;
+  border-radius: 2px;
+  border-left: 5px solid $base;
+  margin: 0 auto;
+  color: gray;
+  background: white;
+  @include span-columns(6);
+  //transform: scale(1.05);
+
+  @include bp (medium) {
+    opacity: 1;
+    color: gray;
+    background: white;
+    @include span-columns(4);
+    bottom: 1.5em;
+    left: 1em;
+    border-radius: 2px;
+  }
+  &:hover {
+    color: $base;
+  }
+}
+
+
+.slide__title {
+  font-size: 1.5em;
+  margin-bottom: .25em;
+}
+
+.slide__excerpt{
+  font-size: .8em;
+  line-height: 1.4;
+}
+
+.slide__view-work {
+  font-size: .8em;
+  font-family: $icons;
+  display: inline-block;
+  text-decoration: underline;
+  margin-top: .5em;
+}
+
+
+
+
+//Slide Arrows
+.flickity-prev-next-button {
+  position: absolute;
+  font-family: $icons;
+  color: white;
+  font-size: 1em;
+  padding: .5em;
+  border-radius: 2px;
+  background: white;
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*! Flickity v1.0.0
+http://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button {
+  width: 2em;
+  height: 2em;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 1.5em;
+  background: white;
+}
+.flickity-prev-next-button:hover .arrow {
+  fill: $base;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: gray;
+}
+.flickity-prev-next-button.no-svg {
+  color: gray;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  right: 3.2em;
+  @include bp (medium) {
+  }
+}
+.flickity-prev-next-button.next {
+  right: 1em;
+}

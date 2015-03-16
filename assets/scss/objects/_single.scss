@@ -12,7 +12,7 @@
 
 .header--single {
 	background: $secondary;
-	margin-top: 75px;
+	margin-top: 65px;
 	position: relative;
 	padding: 2em 0;
 }
@@ -72,7 +72,6 @@
 //Single Navigation
 .single__nav {
 	@extend %clearfix;
-	width: 100%;
 	position: relative;
 	top: 2em;
 	background: white;
@@ -85,12 +84,13 @@
 		padding: 0 1em;
 		border: none;
 		background: none;
+		width: 100%;
 	}
 }
 
 .single__nav a[rel="prev"], .single__nav a[rel="next"] {
 	color: gray;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	width: 50%;
 	text-align: center;
 	padding: .5em 0;
@@ -116,7 +116,7 @@
 
 .single__nav a[rel="prev"]:before {
 	font-family: $icons;
-	content: "\e601";
+	content: "\e602";
 }
 
 .single__nav a[rel="next"] {
@@ -126,7 +126,7 @@
 
 .single__nav a[rel="next"]:after {
 	font-family: $icons;
-	content: "\e600";
+	content: "\e601";
 }
 
 .single__nav a:nth-child(2) {

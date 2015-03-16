@@ -6,10 +6,10 @@
 get_header(); ?>
 	<main class="site-content">
 
-	<header class="header--gallery">
-		<h3 class="header--gallery__title">Gallery</h3>
-		<ul class="header--gallery__categories">
-			<li class="cat-item"><a href="<?php echo site_url(); ?>/gallery">All</a></li>
+	<header class="header--work">
+		<h3 class="header--work__title">Recent Work</h3>
+		<ul class="header--work__categories">
+			<li class="cat-item"><a href="<?php echo site_url(); ?>/work">All</a></li>
 			<?php
 			$uncatid = get_term_by( 'slug', 'uncategorized', 'category');
 			$uncatid = $uncatid->term_id;
@@ -27,7 +27,7 @@ get_header(); ?>
 		</ul>
 	</header>
 
-	<section id="gallery" data-columns>
+	<section id="work">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -45,7 +45,7 @@ get_header(); ?>
 
 	</section>
 
-	<div class="gallery__pagination">
+	<div class="work__pagination">
 	  <?php
 	    next_posts_link( 'Older Projects' );
 	    previous_posts_link( 'Newer Projects' );

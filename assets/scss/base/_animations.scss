@@ -21,7 +21,29 @@
   @include transition (opacity 200ms ease-in-out);
 }
 
-.header--gallery__categories a {
-  @include transition (color 100ms ease-in-out);
-  @include transition (background-color 100ms ease-in-out);
+.slide__view-work {
+  @include transition (all 100ms ease-in-out);
+}
+
+.slick-prev:hover:before, .slick-next:after {
+  @include transition (all 100ms ease-in-out);
+}
+
+.header--work__categories a {
+  @include transition (all 100ms ease-in-out);
+}
+
+
+//Ken Burns Effect on Homepage Slideshow
+
+.slick-active .slide__image {
+  animation: none;
+  @include bp (medium) {
+    //animation:move 4s ease alternate; /* Change this to alternate to stop the loop. */
+  }
+}
+
+@keyframes move {
+  0%   {transform: scale(1.0);}
+  100% {transform: scale(1.05);}
 }

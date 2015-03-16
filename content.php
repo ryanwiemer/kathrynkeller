@@ -4,7 +4,7 @@
  */
 ?>
 
-<article class="project mix <?php foreach((get_the_category()) as $category) { echo $category->cat_name . '';}?>" >
+<article class="project" >
 	<div class="project__container">
 	<a class="project__link" href="<?php the_permalink(); ?>">
 		<?php if ( has_post_thumbnail() ) {

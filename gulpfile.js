@@ -16,7 +16,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 // Move And Minfiy Scripts From Bower
 gulp.task ('move', function() {
-    gulp.src(['bower_components/picturefill/dist/picturefill.min.js','bower_components/jquery/dist/jquery.min.js','bower_components/responsive-nav/responsive-nav.min.js','bower_components/jquery-validate/dist/jquery.validate.min.js','bower_components/jquery-form/jquery.form.js','bower_components/masonry/dist/masonry.pkgd.min.js',,'bower_components/flickity/dist/flickity.pkgd.js'])
+    gulp.src(['bower_components/picturefill/dist/picturefill.min.js','bower_components/jquery/dist/jquery.min.js','bower_components/responsive-nav/responsive-nav.min.js','bower_components/jquery-validate/dist/jquery.validate.min.js','bower_components/jquery-form/jquery.form.js','bower_components/salvattore/dist/salvattore.js','bower_components/flickity/dist/flickity.pkgd.js'])
 	    .pipe(gulp.dest('assets/js/vendor/'));
 });
 
@@ -42,7 +42,7 @@ gulp.task('concat', function() {
       .pipe(concat('home.min.js'))
     	.pipe(uglify())
     	.pipe(gulp.dest('assets/js/'));
-    gulp.src(['assets/js/vendor/masonry.pkgd.min.js','assets/js/scripts/work--settings.js'])
+    gulp.src(['assets/js/vendor/salvattore.js','assets/js/scripts/work--settings.js'])
       .pipe(concat('work.min.js'))
     	.pipe(uglify())
     	.pipe(gulp.dest('assets/js/'));

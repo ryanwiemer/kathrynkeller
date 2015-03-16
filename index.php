@@ -27,7 +27,7 @@ get_header(); ?>
 		</ul>
 	</header>
 
-	<section id="work">
+	<section id="work" data-columns>
 
 		<?php if ( have_posts() ) : ?>
 

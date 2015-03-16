@@ -42,15 +42,12 @@
 
 //Masonry Layout
 #work {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  @extend %clearfix;
 }
 
 .project {
-  width: 100%;
   position: relative;
-  @include bp(medium) {
-    width: 33.3%
-  }
 }
 
 .project__container {
@@ -82,6 +79,29 @@
   .project__overlay {opacity: .75;}
   .project__caption {opacity: 1;}
 }
+
+//Salvattore
+@media screen and (max-width: 480px){
+    #work[data-columns]::before {
+        content: '1 .column.size-1of1';
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #work[data-columns]::before {
+        content: '2 .column.size-1of2';
+    }
+}
+@media screen and (min-width: 769px) {
+    #work[data-columns]::before {
+        content: '3 .column.size-1of3';
+    }
+}
+
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
 
 //Gallery Pagination
 .work__pagination a {

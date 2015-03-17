@@ -21,7 +21,7 @@
 		</nav> <!--single__nav-->
 	</header>
 
-<main class="site-content">
+<main class="page-content">
 	<div class="single__content">
 		<?php the_content(); ?>
 	</div>

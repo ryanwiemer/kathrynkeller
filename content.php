@@ -4,7 +4,7 @@
  */
 ?>
 
-<article class="project" >
+<article class="project">
 	<div class="project__container">
 	<a class="project__link" href="<?php the_permalink(); ?>">
 		<?php if ( has_post_thumbnail() ) {

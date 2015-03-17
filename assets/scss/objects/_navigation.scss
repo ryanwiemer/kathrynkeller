@@ -4,13 +4,12 @@
 
 .site-header {
 	width: 100%;
-	position: fixed;
-	z-index: 99;
+	position: absolute;
+	z-index: 1;
 	top: 0;
 	background: white;
 	height: 65px;
 	border-bottom: 1px solid $secondary;
-	//box-shadow: -1px -1px 1px 0 rgba(0,0,0,.05),1px 0 1px 0 rgba(0,0,0,.05),0 1px 1px 0 rgba(0,0,0,.1);
 }
 
 .site-header__logo {
@@ -47,7 +46,7 @@
 	}
 }
 
-.site-header__nav li a{
+.site-header__nav li a {
 	text-transform: titlecase;
 	font-size: 16px;
 	font-family: $sans;
@@ -56,15 +55,36 @@
 	background: white;
 	text-align: center;
 	line-height: 64px;
+	position: relative;
+	text-decoration: none;
 	@include bp(medium) {
 		border: none;
 		background: none;
+	&:before {
+		content: "";
+	  position: absolute;
+	  width: 100%;
+	  height: 1px;
+	  bottom: 22px;
+	  left: 0;
+	  background-color: $base;
+	  visibility: hidden;
+	  -webkit-transform: scaleX(0);
+	  transform: scaleX(0);
+	  -webkit-transition: all 0.2s ease-in-out 0s;
+	  transition: all 0.2s ease-in-out 0s;
+		}
 	}
 }
 
+.site-header__nav li a:hover:before {
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .site-header__nav .active a {
-	color: gray;
-	//text-decoration: line-through;
+	//color: darken( $secondary, 10% );
 }
 
 .site-header__nav li {
@@ -79,7 +99,7 @@
 	color: white;
 	@include bp(medium) {
 		background: none;
-		color: gray;
+		color: $base;
 	}
 }
 

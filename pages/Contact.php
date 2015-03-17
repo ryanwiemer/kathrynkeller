@@ -5,12 +5,12 @@
 */
 get_header(); ?>
 
-<main class="site-content">
+<header class="page-header">
+	<h2 class="page-header__title">Contact</h3>
+	<h3 class="page-header__subtitle">Integer consequat hendrerit justo, ac.</h4>
+</header>
 
-	<section class="page__header">
-		<h3 class="page__title">Contact</h3>
-		<h4 class="page__subtitle">Integer consequat hendrerit justo, ac.</h4>
-	</section>
+<main class="page-content">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

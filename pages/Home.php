@@ -5,7 +5,7 @@
 */
 get_header(); ?>
 
-<main class="site-content">
+<main class="page-content">
 <div class="carousel">
 	<?php if(get_field('carousel')): ?>
 	<?php while(has_sub_field('carousel')): ?>

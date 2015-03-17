@@ -2,5 +2,5 @@
 
 $(window).load(function(){
 
-
+  $( ".carousel" ).focus();
 });

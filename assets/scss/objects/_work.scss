@@ -1,64 +1,61 @@
 /* -------- *
  *   Work   *
  * -------- */
-
-.header--work {
-  margin: 0 0 1em 0;
-  padding: 1em 1em;
-  text-align: center;
-}
-
-.header--work__title {
-  font-size: 2.5em;
-  letter-spacing: .1em;
-  text-align: center;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-.header--work__categories {
+.page-header__categories {
 	margin-top: .5em;
 	font-size: .8em;
 }
 
-.header--work__categories a {
-  padding: .25em .75em;
+.page-header__categories a {
+  padding: .25em .75em 0;
   border-radius: 2px;
+  text-decoration: underline;
 }
 
-.header--work__categories .current-cat a {
-  background: $secondary;
+.page-header__categories li {
+  display: inline-block;
 }
 
-.header--work__categories a:hover {
-  background: $secondary;
-  color: gray;
+.page-header__categories--current a {
+  color: darken( $secondary, 10% );
 }
 
-.header--work__categories li {
+.page-header__categories .current-cat a {
+  color: $base!important;
+}
+
+.page-header__categories a:hover {
+  color: $base!important;
+}
+
+.page-header__categories:hover a {
+  color: darken( $secondary, 10% );
+}
+
+.page-header__categories li {
 	display: inline-block;
 }
 
 //Masonry Layout
-#work {
+.work {
   margin-bottom: 1em;
   @extend %clearfix;
 }
 
 .project {
   position: relative;
+  margin-bottom: 1em;
 }
 
 .project__container {
-  padding: .5em;
   text-align: center;
 }
 
 .project__caption {
   position: absolute;
   top: 50%;
-  left: .5em;
-  right: .5em;
+  left: 0;
+  right: 0;
   color: white;
   font-size: .8em;
   opacity: 0;
@@ -67,10 +64,10 @@
 .project__overlay {
   background: $base;
   position: absolute;
-  top: .5em;
-  left: .5em;
-  right: .5em;
-  bottom: .5em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0;
 }
 
@@ -81,26 +78,27 @@
 
 //Salvattore
 @media screen and (max-width: 480px){
-    #work[data-columns]::before {
+    .work[data-columns]::before {
         content: '1 .column.size-1of1';
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    #work[data-columns]::before {
+    .work[data-columns]::before {
         content: '2 .column.size-1of2';
     }
 }
 @media screen and (min-width: 769px) {
-    #work[data-columns]::before {
+    .work[data-columns]::before {
         content: '3 .column.size-1of3';
     }
 }
 
-.column { float: left; }
+.column { float: left; //margin-right: 1em;
+}
 .size-1of1 { width: 100%; }
-.size-1of2 { width: 50%; }
-.size-1of3 { width: 33.333%; }
+.size-1of2 { @include span-columns(6); }
+.size-1of3 { @include span-columns(4);  }
 
 //Gallery Pagination
 .work__pagination a {

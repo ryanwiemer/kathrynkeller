@@ -1,0 +1,21 @@
+/* -------- *
+ *  About   *
+ * -------- */
+
+
+.about {}
+
+.about__image {
+  margin-bottom: 1em;
+  @include bp(medium) {
+    @include span-columns(4);
+  }
+}
+
+.about__info {
+  line-height: 1.4;
+  font-size: 1em;
+  @include bp(medium) {
+    @include span-columns(8);
+  }
+}

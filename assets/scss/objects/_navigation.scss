@@ -74,9 +74,9 @@
 }
 
 .site-header__nav li a:hover:before {
-	visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+	//visibility: visible;
+  //-webkit-transform: scaleX(1);
+  //transform: scaleX(1);
 }
 
 .site-header__nav .active a {

@@ -5,7 +5,9 @@
 */
 get_header(); ?>
 
-<header class="page-header">
+<header class="page-header" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'full', true);
+echo $image_url[0]; } else {}?>');">
 	<h2 class="page-header__title">About</h2>
 	<h3 class="page-header__subtitle">Learn all Kathryn Keller</h3>
 </header>
@@ -17,8 +19,10 @@ get_header(); ?>
 		<?php $thumb = wp_get_attachment_image_src(get_field('about_image'), 'thumbnail'); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<img class="about__image" srcset="<?php echo $thumb[0]; ?> 375w, <?php echo $medium[0]; ?> 750w, <?php echo $large[0]; ?> 1500w">
+			<div class="about__image">
+				<img srcset="<?php echo $thumb[0]; ?> 375w, <?php echo $medium[0]; ?> 750w, <?php echo $large[0]; ?> 1500w">
+				<p class="about__image__caption">Kathryn Keller in her studio in Sausalito, California.</p>
+			</div>
 
 			<div class="about__info">
 				<?php the_field('about_info'); ?>

@@ -5,8 +5,12 @@
 */
 get_header(); ?>
 
-<header class="page-header">
+<header class="page-header" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'full', true);
+echo $image_url[0]; } else {}?>');">
 	<h2 class="page-header__title">Contact</h3>
+	<h3 class="page-header__subtitle">Get in touch with the artist</h3>
+
 </header>
 
 <main class="page-content">
@@ -15,33 +19,39 @@ get_header(); ?>
 
 			<?php the_content(); ?>
 
-			<image class="contact__image" src="http://placehold.it/1200x800" />
+			<?php $large = wp_get_attachment_image_src(get_field('contact_image'), 'large'); ?>
+			<?php $medium = wp_get_attachment_image_src(get_field('contact_image'), 'medium'); ?>
+			<?php $thumb = wp_get_attachment_image_src(get_field('contact_image'), 'thumbnail'); ?>
+			<div class="contact-image">
+				<image srcset="<?php echo $thumb[0]; ?> 375w, <?php echo $medium[0]; ?> 750w, <?php echo $large[0]; ?> 1500w" />
+				<p class="contact-image__caption">Steel and Aluminum Scuplture. See more work like this <a href="#">here</a>.</p>
+			</div>
 
 			<form class="form" method="post" name="contact" autocomplete="off">
 				<fieldset>
 					<div class="form__fname">
 						<label class="form__fname__label">First Name</label>
-						<input class="form__fname__input" name="first name" for="first name" type="text"/>
+						<input class="form__fname__input" name="First Name" for="First Name" type="text"/>
 					</div>
 
 					<div class="form__lname">
 						<label class="form__lname__label">Last Name</label>
-						<input class="form__lname__input" name="last name" for="last name" type="text"/>
+						<input class="form__lname__input" name="Last Name" for="Last Name" type="text"/>
 					</div>
 
 					<div class="form__email">
 						<label class="form__email__label">Email</label>
-						<input class="form__email__input" name="email" for="email" type="text"/>
+						<input class="form__email__input" name="Email" for="Email" type="text"/>
 					</div>
 
 					<div class="form__number">
-						<label class="form__number__label">Phone Number <span>(Optional)</span></label>
-						<input class="form__number__input" name="phone number" for="phone number" type="text"/>
+						<label class="form__number__label">Phone Number <span>(optional)</span></label>
+						<input class="form__number__input" name="Phone Number" for="Phone Number" type="text"/>
 					</div>
 
 					<div class="form__message">
 						<label class="form__message__label">Message</label>
-						<textarea class="form__message__textarea" name="message" for="message"type="text"></textarea>
+						<textarea class="form__message__textarea" name="Message" for="Message"type="text"></textarea>
 					</div>
 
 					<div class="form__bot">

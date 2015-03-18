@@ -2,12 +2,31 @@
  * Contact  *
  * -------- */
 
- .contact__image {
-   margin-bottom: 1em;
-   @include bp (medium) {
-     @include span-columns(4);
-   }
+.contact-image {
+ margin-bottom: 1em;
+ display: none;
+ @include bp (medium) {
+   @include span-columns(4);
  }
+}
+
+.contact-image a {
+  color: gray;
+  text-decoration: underline;
+  &:hover {
+    color: $base;
+  }
+}
+
+.contact-image image {
+}
+
+.contact-image__caption {
+  line-height: 1.2;
+  margin-top: .5em;
+  color: gray;
+  text-align: center;
+}
 
 .form {
   @extend %clearfix;
@@ -17,7 +36,7 @@
 }
 
 .form label {
-  text-transform: uppercase;
+  //text-transform: uppercase;
   display: block;
   margin-bottom: .25em;
   font-size: .9em;
@@ -69,8 +88,17 @@
   width: auto!important;
   float: left;
   cursor: pointer;
-  background: none;
-
+  background: $base;
+  color: white;
+  border: 0;
+  outline: 0;
+  font-size: .8em;
+  display: block;
+  height: 50px!important;
+  padding: 0 1em;
+  &:hover {
+    background: gray;
+  }
 }
 
 .form__alert {

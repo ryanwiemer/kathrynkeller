@@ -11,6 +11,15 @@
   }
 }
 
+.about__image__caption {
+  line-height: 1.2;
+  margin-top: .5em;
+  color: gray;
+  text-align: center;
+}
+
+
+
 .about__info {
   font-size: 1em;
   @include bp(medium) {

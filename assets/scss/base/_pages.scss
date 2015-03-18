@@ -3,7 +3,7 @@
  * ------- */
 
 .page-content {
- margin: 0 auto;
+ margin: 2em auto;
  padding: 1em;
  max-width: $container;
  @extend %clearfix;
@@ -11,8 +11,11 @@
 
 //Header
 .page-header {
-  padding: 2em 0;
+  padding: 3em 0;
   text-align: center;
+  background: $secondary;
+  background-size: cover;
+  background-position: center center;
 }
 
 .page-header__title {
@@ -22,19 +25,18 @@
   display: inline-block;
 }
 .page-header__subtitle {
-  font-size: 1em;
   font-family: $sans;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 1em;
   display: none;
 }
 
-
 .page-header__title:after {
-  content:"";
-  width: 75%;
-  height: 3px;
-  display: block;
-  margin: .2em auto 0;
-  background: $secondary;
+  //content:"";
+  //width: 25%;
+  //height: 3px;
+  //display: block;
+  //margin: .25em auto 0;
+  //background: white;
 }

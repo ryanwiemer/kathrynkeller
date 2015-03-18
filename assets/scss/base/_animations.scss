@@ -21,7 +21,7 @@
   @include transition (opacity 200ms ease-in-out);
 }
 
-.slide__view-work {
+.slide__view-work, .form__submit {
   @include transition (all 100ms ease-in-out);
 }
 

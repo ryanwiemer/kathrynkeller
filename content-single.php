@@ -16,8 +16,8 @@
 			</div>
 		<?php endif; ?>
 		<nav class="single__nav">
-			<?php previous_post_link('%link',''); ?>
-			<?php next_post_link('%link',''); ?>
+			<?php previous_post_link('%link','<svg viewBox="0 0 100 100"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" class="arrow" transform="translate(85,100) rotate(180)"></path></svg>'); ?>
+			<?php next_post_link('%link','<svg viewBox="0 0 100 100"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" class="arrow" transform="translate(15,0)"></path></svg>'); ?>
 		</nav> <!--single__nav-->
 	</header>
 

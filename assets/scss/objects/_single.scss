@@ -88,22 +88,22 @@
 }
 
 .single__nav a[rel="prev"], .single__nav a[rel="next"] {
-	color: gray;
-	font-size: 1.25em;
-	width: 50%;
-	text-align: center;
-	padding: .5em 0;
+	width: 2em;
+	height: 2em;
+	border-radius: 2px;
+	padding: .5em;
 	background: white;
 	@include bp(medium) {
-		border: none;
-		width: auto;
-		padding: .5em 0 0 0;
-		background: none;
+		width: 2em;
+		height: 2em;
+		border-radius: 2px;
+		padding: .5em;
+		background: white;
 	}
 	&:hover {
-		color: $base;
+		fill: $base;
 		@include bp(medium) {
-			background: none;
+			fill: $base;
 		}
 	}
 }
@@ -114,8 +114,8 @@
 }
 
 .single__nav a[rel="prev"]:before {
-	font-family: $icons;
-	content: "\e602";
+	//font-family: $icons;
+	//content: "\e602";
 }
 
 .single__nav a[rel="next"] {
@@ -124,8 +124,8 @@
 }
 
 .single__nav a[rel="next"]:after {
-	font-family: $icons;
-	content: "\e601";
+	//font-family: $icons;
+	//content: "\e601";
 }
 
 .single__nav a:nth-of-type(2) {

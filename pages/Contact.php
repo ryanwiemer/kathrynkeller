@@ -7,7 +7,6 @@ get_header(); ?>
 
 <header class="page-header">
 	<h2 class="page-header__title">Contact</h3>
-	<h3 class="page-header__subtitle">Integer consequat hendrerit justo, ac.</h4>
 </header>
 
 <main class="page-content">
@@ -16,22 +15,33 @@ get_header(); ?>
 
 			<?php the_content(); ?>
 
+			<image class="contact__image" src="http://placehold.it/1200x800" />
+
 			<form class="form" method="post" name="contact" autocomplete="off">
 				<fieldset>
-					<div class="form__name">
-						<input class="form__name__input" name="name" for="name" placeholder="Name" type="text"/>
+					<div class="form__fname">
+						<label class="form__fname__label">First Name</label>
+						<input class="form__fname__input" name="first name" for="first name" type="text"/>
+					</div>
+
+					<div class="form__lname">
+						<label class="form__lname__label">Last Name</label>
+						<input class="form__lname__input" name="last name" for="last name" type="text"/>
 					</div>
 
 					<div class="form__email">
-						<input class="form__email__input" name="email" for="email" placeholder="Email" type="text"/>
+						<label class="form__email__label">Email</label>
+						<input class="form__email__input" name="email" for="email" type="text"/>
 					</div>
 
-					<div class="form__subject">
-						<input class="form__subject__input" name="subject" for="subject" placeholder="Subject" type="text"/>
+					<div class="form__number">
+						<label class="form__number__label">Phone Number <span>(Optional)</span></label>
+						<input class="form__number__input" name="phone number" for="phone number" type="text"/>
 					</div>
 
 					<div class="form__message">
-						<textarea class="form__message__textarea" name="message" for="message" placeholder="Message" type="text"></textarea>
+						<label class="form__message__label">Message</label>
+						<textarea class="form__message__textarea" name="message" for="message"type="text"></textarea>
 					</div>
 
 					<div class="form__bot">

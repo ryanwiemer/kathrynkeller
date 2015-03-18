@@ -1,6 +1,10 @@
 /* -------- *
  *   Work   *
  * -------- */
+.blog .page-header__title:after, .archive .page-header__title:after {
+	display: none;
+}
+
 .page-header__categories {
 	margin-top: .5em;
 	font-size: .8em;
@@ -8,7 +12,6 @@
 
 .page-header__categories a {
   padding: .25em .75em 0;
-  border-radius: 2px;
   text-decoration: underline;
 }
 

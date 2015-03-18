@@ -4,11 +4,7 @@
 
 .site-header {
 	width: 100%;
-	position: absolute;
-	z-index: 1;
-	top: 0;
 	background: white;
-	height: 65px;
 	border-bottom: 1px solid $secondary;
 }
 
@@ -50,7 +46,7 @@
 	text-transform: titlecase;
 	font-size: 16px;
 	font-family: $sans;
-	border-bottom: 1px solid $secondary;
+	border-top: 1px solid $secondary;
 	display: block;
 	background: white;
 	text-align: center;
@@ -121,7 +117,7 @@
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
-  position: absolute;
+  //position: absolute;
   display: block;
   overflow: hidden;
   zoom: 1;

@@ -5,7 +5,9 @@
 .site-header {
 	width: 100%;
 	background: white;
-	border-bottom: 1px solid $secondary;
+	z-index: 99;
+	position: relative;
+	//border-bottom: 1px solid $secondary;
 }
 
 .site-header__logo {

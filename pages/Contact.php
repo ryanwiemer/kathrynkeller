@@ -8,7 +8,7 @@ get_header(); ?>
 <header class="page-header" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
 $image_url = wp_get_attachment_image_src($image_id,'full', true);
 echo $image_url[0]; } else {}?>');">
-	<h2 class="page-header__title">Contact</h3>
+	<h2 class="page-header__title">Contact</h2>
 	<h3 class="page-header__subtitle">Get in touch with the artist</h3>
 
 </header>

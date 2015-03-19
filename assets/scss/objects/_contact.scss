@@ -97,8 +97,9 @@
   appearance: none;
   font-size: .8em;
   display: block;
-  height: 50px!important;
+  height: 40px!important;
   padding: 0 1em;
+  margin-bottom: 0!important;
   &:hover {
     background: gray;
   }

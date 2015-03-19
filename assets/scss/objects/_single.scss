@@ -14,12 +14,14 @@
 	background: $secondary;
 	position: relative;
 	padding: 2em 0;
+	text-align: center;
 }
 
 .header--single__title {
-	text-align: center;
+	text-transform: uppercase;
 	font-size: 2em;
 	margin-bottom: .25em;
+	display: inline-block;
 }
 
 .header--single__category, .header--single__category a {
@@ -71,29 +73,32 @@
 //Single Navigation
 .single__nav {
 	@extend %clearfix;
+	background: white;
 	position: relative;
 	top: 2em;
-	background: white;
-	border-bottom: 1px solid $secondary;
+	border-bottom: 1px solid darken($secondary, 10%);
 	@include bp(medium) {
-		position: absolute;
-		display: inline-block;
-		top: 50%;
-		transform: translateY(-50%);
-		padding: 0 1em;
+		position: static;
 		border: none;
-		background: none;
-		width: 100%;
 	}
 }
 
 .single__nav a[rel="prev"], .single__nav a[rel="next"] {
-	width: 2em;
-	height: 2em;
-	border-radius: 2px;
-	padding: .5em;
+	fill: gray;
+	width: 50%;
+	height: 3em;
+	padding: 1em;
 	background: white;
+	& svg {
+		width: 1em;
+		display: block;
+		margin: 0 auto;
+	}
 	@include bp(medium) {
+		border-radius: 2px;
+		position: absolute;
+		top: 50%;
+		margin-top: -1em;
 		width: 2em;
 		height: 2em;
 		border-radius: 2px;
@@ -108,25 +113,27 @@
 	}
 }
 
+
+
 .single__nav a[rel="prev"] {
 	float: right;
-	border-left: 1px solid $secondary;
-}
-
-.single__nav a[rel="prev"]:before {
-	//font-family: $icons;
-	//content: "\e602";
+	right: 1em;
+	border-left: 1px solid darken($secondary, 10%);
+	@include bp(medium) {
+		border: none;
+	}
 }
 
 .single__nav a[rel="next"] {
 	float: left;
-	border-right: 1px solid $secondary;
+	left: 1em;
+	border-right: 1px solid darken($secondary, 10%);
+	@include bp(medium) {
+		border: none;
+	}
 }
 
-.single__nav a[rel="next"]:after {
-	//font-family: $icons;
-	//content: "\e601";
-}
+
 
 .single__nav a:nth-of-type(2) {
   border-right: 0;

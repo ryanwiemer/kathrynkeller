@@ -5,9 +5,7 @@
 */
 get_header(); ?>
 
-<header class="page-header" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
-$image_url = wp_get_attachment_image_src($image_id,'full', true);
-echo $image_url[0]; } else {}?>');">
+<header class="page-header">
 	<h2 class="page-header__title">Contact</h2>
 	<h3 class="page-header__subtitle">Get in touch with the artist</h3>
 
@@ -45,7 +43,7 @@ echo $image_url[0]; } else {}?>');">
 					</div>
 
 					<div class="form__number">
-						<label class="form__number__label">Phone Number <span>(optional)</span></label>
+						<label class="form__number__label">Phone Number <span>(Optional)</span></label>
 						<input class="form__number__input" name="Phone Number" for="Phone Number" type="text"/>
 					</div>
 

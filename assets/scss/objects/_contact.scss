@@ -3,29 +3,13 @@
  * -------- */
 
 .contact-image {
- margin-bottom: 1em;
  display: none;
  @include bp (medium) {
    @include span-columns(4);
+   background-size: cover;
+   background-position: center center;
+   height: 605px;
  }
-}
-
-.contact-image a {
-  color: gray;
-  text-decoration: underline;
-  &:hover {
-    color: $base;
-  }
-}
-
-.contact-image image {
-}
-
-.contact-image__caption {
-  line-height: 1.2;
-  margin-top: .5em;
-  color: gray;
-  text-align: center;
 }
 
 .form {

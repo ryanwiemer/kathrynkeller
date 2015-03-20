@@ -16,7 +16,6 @@
   z-index: 99;
 }
 
-
 /* Carousel Slides */
 .carousel {
   position: relative;
@@ -31,39 +30,50 @@
 }
 
 .slide__info {
-  padding: .5em 1em;
   position: absolute;
+  height: 85px;
   text-align: left;
-  bottom: 1.5em;
-  left: 1em;
-  border-radius: 2px;
-  border-left: 5px solid $base;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   color: gray;
-  background: white;
-  @include span-columns(6);
-  @include bp (medium) {
-    opacity: 1;
-    color: gray;
-    background: white;
-    @include span-columns(4);
-    bottom: 1.5em;
-    left: 1em;
-    border-radius: 2px;
-  }
+  background: $base;
+  text-align: center;
   &:hover {
-    color: $base;
+    //background: gray;
+    color: white;
   }
 }
 
+.slide__info:before {
+  //content: "View Work";
+
+}
+
+.slide__info .slide__title {
+  //opacity: 0;
+  //visibility: hidden;
+  //display: none;
+}
+
+
 .slide__title {
   font-size: 1.5em;
-  margin-bottom: .25em;
+  display: inline;
+  line-height: 85px;
 }
+
+.slide__title:after {
+  //content: " [+]";
+}
+
 
 .slide__excerpt{
   font-size: .9em;
   line-height: 1.4;
+  display: inline-block;
+  display: none;
 }
 
 .slide__view-work {
@@ -72,19 +82,45 @@
   display: inline-block;
   text-decoration: underline;
   margin-top: .5em;
+  display: none;
 }
 
 //Slide Arrows
+
+/* ---- previous/next buttons ---- */
 .flickity-prev-next-button {
+  width: 2em;
+  height: 85px;
   position: absolute;
   font-family: $icons;
   color: white;
-  font-size: 1em;
   padding: .5em;
-  border-radius: 2px;
-  background: white;
+  color: gray;
+  bottom: 0;
+  background: $base;
+
+}
+.flickity-prev-next-button:hover .arrow {
+  fill: white;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: gray;
+}
+.flickity-prev-next-button.no-svg {
   color: gray;
 }
+/* position outside */
+.flickity-prev-next-button.previous {
+  //right: 2em;
+  left: 0;
+  bottom: 0;
+}
+.flickity-prev-next-button.next {
+  right: 0;
+  bottom: 0;
+}
+
 
 /*! Flickity v1.0.0
 http://flickity.metafizzy.co
@@ -124,33 +160,4 @@ http://flickity.metafizzy.co
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
   cursor: -webkit-grabbing;
   cursor: grabbing;
-}
-
-/* ---- previous/next buttons ---- */
-.flickity-prev-next-button {
-  width: 2em;
-  height: 2em;
-  border-radius: 2px;
-  position: absolute;
-  bottom: 1.5em;
-  background: white;
-}
-.flickity-prev-next-button:hover .arrow {
-  fill: $base;
-}
-/* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: gray;
-}
-.flickity-prev-next-button.no-svg {
-  color: gray;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  right: 3.2em;
-  @include bp (medium) {
-  }
-}
-.flickity-prev-next-button.next {
-  right: 1em;
 }

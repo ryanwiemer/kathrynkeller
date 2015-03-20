@@ -20,9 +20,7 @@ get_header(); ?>
 			<?php $large = wp_get_attachment_image_src(get_field('contact_image'), 'large'); ?>
 			<?php $medium = wp_get_attachment_image_src(get_field('contact_image'), 'medium'); ?>
 			<?php $thumb = wp_get_attachment_image_src(get_field('contact_image'), 'thumbnail'); ?>
-			<div class="contact-image">
-				<image srcset="<?php echo $thumb[0]; ?> 375w, <?php echo $medium[0]; ?> 750w, <?php echo $large[0]; ?> 1500w" />
-				<p class="contact-image__caption">Steel and Aluminum Scuplture. See more work like this <a href="#">here</a>.</p>
+			<div class="contact-image" style="background-image: url('<?php echo $large[0]; ?>')">
 			</div>
 
 			<form class="form" method="post" name="contact" autocomplete="off">

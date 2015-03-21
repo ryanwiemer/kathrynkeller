@@ -25,7 +25,6 @@
 
 .header--single__category, .header--single__category a {
 	text-align: center;
-	color: gray;
 }
 
 .header--single__category a  {
@@ -87,7 +86,7 @@
 	width: 50%;
 	height: 3em;
 	padding: 1em;
-	background: white;
+	//background: white;
 	& svg {
 		width: 1em;
 		display: block;
@@ -102,7 +101,6 @@
 		height: 2em;
 		border-radius: 2px;
 		padding: .5em;
-		background: white;
 	}
 	&:hover {
 		fill: $base;
@@ -111,8 +109,6 @@
 		}
 	}
 }
-
-
 
 .single__nav a[rel="prev"] {
 	float: right;
@@ -131,8 +127,6 @@
 		border: none;
 	}
 }
-
-
 
 .single__nav a:nth-of-type(2) {
   border-right: 0;

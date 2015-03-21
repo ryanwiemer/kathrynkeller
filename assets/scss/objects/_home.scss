@@ -31,13 +31,12 @@
 
 .slide__info {
   position: absolute;
-  height: 85px;
-  text-align: left;
+  height: 65px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  color: gray;
+  color: white;
   background: $base;
   text-align: center;
   &:hover {
@@ -59,9 +58,13 @@
 
 
 .slide__title {
-  font-size: 1.5em;
+  font-size: 1em;
   display: inline;
-  line-height: 85px;
+  padding: .5em;
+  font-family: $sans;
+  letter-spacing: 2px;
+  //text-transform: uppercase;
+  line-height: 65px;
 }
 
 .slide__title:after {
@@ -90,12 +93,11 @@
 /* ---- previous/next buttons ---- */
 .flickity-prev-next-button {
   width: 2em;
-  height: 85px;
+  height: 65px;
   position: absolute;
   font-family: $icons;
   color: white;
   padding: .5em;
-  color: gray;
   bottom: 0;
   background: $base;
 
@@ -105,10 +107,10 @@
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: gray;
+  fill: white;
 }
 .flickity-prev-next-button.no-svg {
-  color: gray;
+  color: white;
 }
 /* position outside */
 .flickity-prev-next-button.previous {

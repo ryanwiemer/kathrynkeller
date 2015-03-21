@@ -1,4 +1,4 @@
-//Slick JS Settings
+//Homepage Settings
 
 $('.carousel').flickity({
   // options

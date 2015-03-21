@@ -1,4 +1,4 @@
-//General Scripts for all pages
+//Menu Settings
 
 var nav = responsiveNav(".site-header__nav ul",
 {

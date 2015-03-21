@@ -34,7 +34,7 @@ gulp.task('concat', function() {
       .pipe(concat('global.min.js'))
       .pipe(uglify())
       .pipe(gulp.dest('assets/js/'));
-    gulp.src(['assets/js/vendor/jquery.form.js','assets/js/scripts/jquery.form.settings.js','assets/js/vendor/jquery.validate.min.js'])
+    gulp.src(['assets/js/vendor/jquery.form.js','assets/js/scripts/jquery.form.settings.js','assets/js/vendor/jquery.validate.min.js','assets/js/scripts/contact--settings.js'])
       .pipe(concat('contact.min.js'))
   		.pipe(uglify())
       .pipe(gulp.dest('assets/js/'));
@@ -42,7 +42,7 @@ gulp.task('concat', function() {
       .pipe(concat('home.min.js'))
     	.pipe(uglify())
     	.pipe(gulp.dest('assets/js/'));
-    gulp.src(['assets/js/vendor/salvattore.js','assets/js/scripts/work--settings.js'])
+    gulp.src(['assets/js/vendor/salvattore.js'])
       .pipe(concat('work.min.js'))
     	.pipe(uglify())
     	.pipe(gulp.dest('assets/js/'));

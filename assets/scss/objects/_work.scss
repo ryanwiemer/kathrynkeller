@@ -20,7 +20,7 @@
 }
 
 .page-header__categories--current a {
-  color: darken( $secondary, 10% );
+  color: darken( $secondary, 20% );
 }
 
 .page-header__categories .current-cat a {
@@ -41,9 +41,13 @@
 
 //Masonry Layout
 .work {
-  margin-bottom: 1em;
   @extend %clearfix;
 }
+
+.blog .page-content, .archive .page-content {
+	padding-bottom: 0;
+}
+
 
 .project {
   position: relative;
@@ -97,7 +101,8 @@
     }
 }
 
-.column { float: left; //margin-right: 1em;
+.column {
+	float: left;
 }
 .size-1of1 { width: 100%; }
 .size-1of2 { @include span-columns(6); }

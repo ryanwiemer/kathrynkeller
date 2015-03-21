@@ -13,7 +13,7 @@ get_header(); ?>
 		$uncatid = get_term_by( 'slug', 'uncategorized', 'category');
 		$uncatid = $uncatid->term_id;
 		$args = array(
-			'orderby'            => 'name',
+			'orderby'            => 'ID',
 			'order'              => 'ASC',
 			'style'              => 'list',
 			'show_count'         => 0,

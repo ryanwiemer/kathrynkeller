@@ -21,14 +21,14 @@
   @include transition (opacity 200ms ease-in-out);
 }
 
-.slide__view-work, .form__submit {
-  @include transition (all 100ms ease-in-out);
-}
-
-.slick-prev:hover:before, .slick-next:after {
+.form__submit {
   @include transition (all 100ms ease-in-out);
 }
 
 .page-header__categories a {
+  @include transition (all 200ms ease-in-out);
+}
+
+.slide__view-work, .flickity-prev-next-button .arrow {
   @include transition (all 200ms ease-in-out);
 }

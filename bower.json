@@ -17,8 +17,11 @@
     "jquery-validate": "~1.13.0",
     "jquery": "~2.1.1",
     "responsive-nav": "~1.0.32",
-    "picturefill": "~2.2.0",
+    "picturefill": "~2.3.0",
     "flickity": "~1.0.0",
     "salvattore": "rnmp/salvattore#~1.0.7"
+  },
+  "resolutions": {
+    "picturefill": "~2.3.0"
   }
 }

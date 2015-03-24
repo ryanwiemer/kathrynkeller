@@ -21,7 +21,7 @@
 
 /* Carousel Slides */
 .carousel {
-  //position: relative;
+  position: relative;
 }
 
 .slide {
@@ -35,9 +35,9 @@
 
 .slide:before {
   content: '';
- display: inline-block;
- height: 100%;
- vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .slide__info {
@@ -47,9 +47,6 @@
   color: white;
   display: inline-block;
   text-align: center;
-  &:hover {
-    color: white;
-  }
 }
 
 .slide__title {
@@ -66,53 +63,48 @@
 
 .slide__view-work {
   font-size: .9em;
-  font-family: $icons;
   display: inline-block;
   margin-top: .5em;
   padding: .5em;
-  background: white;
+  background: rgba(255,255,255,.8);
   color: gray;
   border-radius: 2px;
   &:hover {
+    background: white;
     color: $base;
   }
 }
-
-//Slide Arrows
 
 /* ---- previous/next buttons ---- */
 .flickity-prev-next-button {
   width: 2em;
   height: 2em;
   position: absolute;
-  font-family: $icons;
-  bottom: 0;
+  &:hover .arrow{
+    fill: white;
+  }
 }
-
 
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
-  &:hover {
-    //fill: gray;
-  }
-
+  fill: rgba(255,255,255,.8);
 }
+
 .flickity-prev-next-button.no-svg {
   color: white;
 }
-/* position outside */
+
 .flickity-prev-next-button.previous {
   left: .55em;
   top: 50%;
   margin-top: -1em;
 }
+
 .flickity-prev-next-button.next {
   right: .55em;
   top: 50%;
   margin-top: -1em;
 }
-
 
 /*! Flickity v1.0.0
 http://flickity.metafizzy.co
@@ -138,9 +130,9 @@ http://flickity.metafizzy.co
 /* draggable */
 .flickity-enabled.is-draggable {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport {

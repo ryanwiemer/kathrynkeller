@@ -1,12 +1,10 @@
 /* -------- *
  *   Work   *
  * -------- */
-.blog .page-header__title:after, .archive .page-header__title:after {
-	display: none;
-}
 
 .page-header__categories {
-	margin: 0;
+	margin: 0 auto;
+	display: inline-block;
 }
 
 .page-header__categories a {
@@ -46,7 +44,6 @@
 .blog .page-content, .archive .page-content {
 	padding-bottom: 0;
 }
-
 
 .project {
   position: relative;

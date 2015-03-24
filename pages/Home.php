@@ -14,17 +14,16 @@ get_header(); ?>
 		<?php $thumb = wp_get_attachment_image_src(get_sub_field('image'), 'thumbnail'); ?>
 
 		<figure class="slide" style="background-image: url('<?php echo $large[0]; ?>');">
-			<a class="slide__link" href="<?php the_sub_field('link'); ?>">
 				<div class="slide__info">
 					<h2 class="slide__title"><?php the_sub_field('title'); ?></h2>
 					<p class="slide__excerpt">
 						<?php the_sub_field('description'); ?>
 					</p>
-					<div class="slide__view-work">View Work</div>
+					<a class="slide__link" href="<?php the_sub_field('link'); ?>">
+						<div class="slide__view-work">View Work</div>
+					</a>
 				</div>
-			</a>
 		</figure>
-		
 	<?php endwhile; ?>
 	<?php endif; ?>
 </div>

@@ -3,7 +3,10 @@
  * -------- */
 
 .home .site-footer {
-  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .home .page-content {
@@ -18,7 +21,7 @@
 
 /* Carousel Slides */
 .carousel {
-  position: relative;
+  //position: relative;
 }
 
 .slide {
@@ -27,65 +30,52 @@
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  text-align: center;
+}
+
+.slide:before {
+  content: '';
+ display: inline-block;
+ height: 100%;
+ vertical-align: middle;
 }
 
 .slide__info {
-  position: absolute;
-  height: 65px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 600px;
   color: white;
-  background: $base;
+  display: inline-block;
   text-align: center;
   &:hover {
-    //background: gray;
     color: white;
   }
 }
 
-.slide__info:before {
-  //content: "View Work";
-
-}
-
-.slide__info .slide__title {
-  //opacity: 0;
-  //visibility: hidden;
-  //display: none;
-}
-
-
 .slide__title {
-  font-size: 1em;
-  display: inline;
-  padding: .5em;
-  font-family: $sans;
+  font-size: 2.5em;
+  font-family: $serif;
   letter-spacing: 2px;
-  //text-transform: uppercase;
-  line-height: 65px;
 }
 
-.slide__title:after {
-  //content: " [+]";
-}
-
-
-.slide__excerpt{
-  font-size: .9em;
+.slide__excerpt {
   line-height: 1.4;
-  display: inline-block;
-  display: none;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .slide__view-work {
   font-size: .9em;
   font-family: $icons;
   display: inline-block;
-  text-decoration: underline;
   margin-top: .5em;
-  display: none;
+  padding: .5em;
+  background: white;
+  color: gray;
+  border-radius: 2px;
+  &:hover {
+    color: $base;
+  }
 }
 
 //Slide Arrows
@@ -93,34 +83,34 @@
 /* ---- previous/next buttons ---- */
 .flickity-prev-next-button {
   width: 2em;
-  height: 65px;
+  height: 2em;
   position: absolute;
   font-family: $icons;
-  color: white;
-  padding: .5em;
   bottom: 0;
-  background: $base;
+}
 
-}
-.flickity-prev-next-button:hover .arrow {
-  fill: white;
-}
+
 /* arrow color */
 .flickity-prev-next-button .arrow {
   fill: white;
+  &:hover {
+    //fill: gray;
+  }
+
 }
 .flickity-prev-next-button.no-svg {
   color: white;
 }
 /* position outside */
 .flickity-prev-next-button.previous {
-  //right: 2em;
-  left: 0;
-  bottom: 0;
+  left: .55em;
+  top: 50%;
+  margin-top: -1em;
 }
 .flickity-prev-next-button.next {
-  right: 0;
-  bottom: 0;
+  right: .55em;
+  top: 50%;
+  margin-top: -1em;
 }
 
 

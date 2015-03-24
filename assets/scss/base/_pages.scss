@@ -10,9 +10,9 @@
 
 }
 
-//Header
+//Page Header
 .page-header {
-  padding: 3em 0;
+  padding: 2.5em 0;
   background: $secondary;
   background-size: cover;
   background-position: center center;
@@ -24,27 +24,14 @@
 
 .page-header__title {
   font-size: 2.5em;
-  letter-spacing: 2px;
   margin: 0 auto;
   padding-bottom: 0;
   position: relative;
   line-height: 1.2;
   display: inline-block;
-  padding: 0 0 .25em;
+  padding: 0 .5em .2em;
 }
-
-.page-header__title:after {
-  content: "";
-  height: 3px;
-  width: 35%;
-  background: rgba(31,31,31,.15);
-  display: block;
-  margin: .25em auto .5em;
-  display: none;
-}
-
 
 .page-header__subtitle {
   font-family: $sans;
-
 }

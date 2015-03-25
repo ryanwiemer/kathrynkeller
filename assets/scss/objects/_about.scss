@@ -4,6 +4,7 @@
 
 .about {
   margin: 0 auto;
+
 }
 
 .about__image {
@@ -15,6 +16,10 @@
   @include bp(medium) {
     @include span-columns(6);
     margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 1em;
   }
 }
 

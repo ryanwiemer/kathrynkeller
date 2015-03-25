@@ -111,18 +111,14 @@
 }
 
 .single__nav a[rel="prev"] {
-	float: right;
-	right: 1em;
-	border-left: 1px solid darken($secondary, 10%);
+	right: .5em;
 	@include bp(medium) {
 		border: none;
 	}
 }
 
 .single__nav a[rel="next"] {
-	float: left;
-	left: 1em;
-	border-right: 1px solid darken($secondary, 10%);
+	left: .5em;
 	@include bp(medium) {
 		border: none;
 	}

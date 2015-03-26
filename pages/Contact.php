@@ -26,31 +26,31 @@ get_header(); ?>
 				<fieldset>
 					<div class="form__fname">
 						<label class="form__fname__label">First Name</label>
-						<input class="form__fname__input" name="FirstName" for="FirstName" type="text"/>
+						<input class="form__fname__input" name="firstName" for="firstName" type="text"/>
 					</div>
 
 					<div class="form__lname">
 						<label class="form__lname__label">Last Name</label>
-						<input class="form__lname__input" name="LastName" for="LastName" type="text"/>
+						<input class="form__lname__input" name="lastName" for="lastName" type="text"/>
 					</div>
 
 					<div class="form__email">
 						<label class="form__email__label">Email</label>
-						<input class="form__email__input" name="Email" for="Email" type="text"/>
+						<input class="form__email__input" name="email" for="email" type="text"/>
 					</div>
 
 					<div class="form__number">
 						<label class="form__number__label">Phone Number <span> (Optional)</span></label>
-						<input class="form__number__input" name="PhoneNumber" for="PhoneNumber" type="text"/>
+						<input class="form__number__input" name="phoneNumber" for="phoneNumber" type="text"/>
 					</div>
 
 					<div class="form__message">
 						<label class="form__message__label">Message</label>
-						<textarea class="form__message__textarea" name="Message" for="Message"type="text"></textarea>
+						<textarea class="form__message__textarea" name="message" for="message"type="text"></textarea>
 					</div>
 
 					<div class="form__bot">
-						<input class="form__bot__input" name="Bot" for="Bot" placeholder="Spam filter (Leave blank)" type="text"/>
+						<input class="form__bot__input" name="bot" for="bot" placeholder="Spam filter (Leave blank)" type="text"/>
 					</div>
 
 					<input class="form__submit btn" name="submit" type="submit" value="Send Message"/>

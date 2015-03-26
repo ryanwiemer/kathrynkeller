@@ -2,25 +2,25 @@
 jQuery(function() {
     jQuery('.form').validate({
         rules: {
-            FirstName: {
-                required: true
-            },
-            LastName: {
-                required: true
-            },
-            Email: {
-                required: true,
-                email: true
-            },
-            PhoneNumber: {
-                required: false,
-            },
-            Message: {
-                required: true,
-            },
-            Bot: {
-                required: false,
-            },
+          FirstName: {
+              required: true
+          },
+          LastName: {
+              required: true
+          },
+          Email: {
+              required: true,
+              email: true
+          },
+          PhoneNumber: {
+              required: false,
+          },
+          Message: {
+              required: true,
+          },
+          Bot: {
+              required: false,
+          },
         },
         errorPlacement: function () { },
         submitHandler: function(form) {

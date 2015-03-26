@@ -76,6 +76,7 @@
 	position: relative;
 	top: 2em;
 	border-bottom: 1px solid darken($secondary, 10%);
+	width: 100%;
 	@include bp(medium) {
 		position: static;
 		border: none;
@@ -84,9 +85,10 @@
 
 .single__nav a[rel="prev"], .single__nav a[rel="next"] {
 	fill: gray;
-	width: 50%;
 	height: 3em;
 	padding: 1em;
+	display: block;
+	width: 50%;
 	& svg {
 		width: 1em;
 		display: block;
@@ -112,12 +114,15 @@
 
 .single__nav a[rel="prev"] {
 	right: .5em;
+	float: right;
+	border-left: 1px solid darken($secondary, 10%);
 	@include bp(medium) {
 		border: none;
 	}
 }
 
 .single__nav a[rel="next"] {
+	border-right: 1px solid darken($secondary, 10%);
 	left: .5em;
 	@include bp(medium) {
 		border: none;
@@ -125,5 +130,5 @@
 }
 
 .single__nav a:nth-of-type(2) {
-  border-right: 0;
+	border-right: none;
 }

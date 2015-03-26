@@ -10,9 +10,24 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifycss = require('gulp-minify-css');
-var lr = require('tiny-lr');
-var livereload = require('gulp-livereload');
 var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync');
+var reload      = browserSync.reload;
+
+gulp.task('browser-sync', function() {
+    //watch files
+    var files = [
+      'assets/css/*.css',
+      'assets/js/*.js',
+      '*.php'
+    ];
+    //initialize browsersync
+    browserSync.init(files, {
+    //browsersync with a php server
+    proxy: "kathrynkellerartist.dev",
+    notify: false
+    });
+});
 
 // Move And Minfiy Scripts From Bower
 gulp.task ('move', function() {
@@ -25,7 +40,7 @@ gulp.task('scripts', function() {
     gulp.src(['assets/js/scripts/*.js'])
       .pipe(jshint())
       .pipe(jshint.reporter('default'))
-      .pipe(livereload());
+      .pipe(browserSync.reload({stream:true}));
 });
 
 // Concat JS
@@ -58,14 +73,15 @@ gulp.task('sass', function() {
       .pipe(minifycss())
       .pipe(rename({ suffix: '.min' }))
       .pipe(gulp.dest('assets/css/'))
-      .pipe(livereload());
+      .pipe(browserSync.reload({stream:true}));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('assets/scss/*/*.scss', ['sass'])
     gulp.watch('assets/js/*/*.js', ['scripts','concat']);
+    gulp.watch('.php').on('change', reload);
 });
 
 // Default Task
-gulp.task('default', ['sass','scripts','concat', 'watch']);
+gulp.task('default', ['sass','scripts','concat', 'browser-sync', 'watch']);

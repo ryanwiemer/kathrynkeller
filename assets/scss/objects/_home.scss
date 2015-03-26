@@ -43,21 +43,29 @@
 .slide__info {
   display: inline-block;
   vertical-align: middle;
-  width: 600px;
+  max-width: 80%;
   color: white;
   display: inline-block;
   text-align: center;
 }
 
 .slide__title {
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: .1em;
+  line-height: 1.2;
+  @include bp(medium) {
+    font-size: 2.5em;
+  }
 }
 
 .slide__excerpt {
-  line-height: 1.4;
-  max-width: 400px;
-  margin: 0 auto;
+  display: none;
+  @include bp(medium) {
+    display: block;
+    line-height: 1.4;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .slide__view-work {

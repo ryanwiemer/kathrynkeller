@@ -5,7 +5,11 @@
     $lastName =  sanitize_text_field( $_POST['lastName'] );
     $phoneNumber = sanitize_text_field( $_POST['phoneNumber'] );
     $subject = "Kathryn Keller Artist | Message From $firstName $lastName";
+
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $headers = "From: " . sanitize_email( $_POST["email"] ) . "\r\n";
+
     $email = sanitize_email( $_POST["email"] );
     $headers .= "Reply-To: ". sanitize_email( $_POST["email"] ) . "\r\n";
     $message = esc_textarea( $_POST["message"] );

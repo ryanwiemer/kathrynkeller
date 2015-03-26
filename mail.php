@@ -12,10 +12,10 @@
 
     $email = sanitize_email( $_POST["email"] );
     $headers .= "Reply-To: ". sanitize_email( $_POST["email"] ) . "\r\n";
-    $message = esc_textarea( $_POST["message"] );
+    $body = esc_textarea( $_POST["message"] );
 
 
-    $body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6; margin: 0; padding: 0;">
   <head>
     <meta name="viewport" content="width=device-width" />
@@ -62,5 +62,5 @@
 	</tr></table></body>
 </html>';
 
-    $send = wp_mail($to, $subject, $body, $headers);
+    $send = wp_mail($to, $subject, $message, $headers);
 ?>

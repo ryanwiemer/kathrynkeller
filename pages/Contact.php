@@ -26,12 +26,12 @@ get_header(); ?>
 				<fieldset>
 					<div class="form__fname">
 						<label class="form__fname__label">First Name</label>
-						<input class="form__fname__input" name="First Name" for="First Name" type="text"/>
+						<input class="form__fname__input" name="FirstName" for="FirstName" type="text"/>
 					</div>
 
 					<div class="form__lname">
 						<label class="form__lname__label">Last Name</label>
-						<input class="form__lname__input" name="Last Name" for="Last Name" type="text"/>
+						<input class="form__lname__input" name="LastName" for="LastName" type="text"/>
 					</div>
 
 					<div class="form__email">
@@ -41,7 +41,7 @@ get_header(); ?>
 
 					<div class="form__number">
 						<label class="form__number__label">Phone Number <span> (Optional)</span></label>
-						<input class="form__number__input" name="Phone Number" for="Phone Number" type="text"/>
+						<input class="form__number__input" name="PhoneNumber" for="PhoneNumber" type="text"/>
 					</div>
 
 					<div class="form__message">
@@ -50,17 +50,19 @@ get_header(); ?>
 					</div>
 
 					<div class="form__bot">
-						<input class="form__bot__input" name="bot" for="bot" placeholder="Spam filter (Leave blank)" type="text"/>
+						<input class="form__bot__input" name="Bot" for="Bot" placeholder="Spam filter (Leave blank)" type="text"/>
 					</div>
 
 					<input class="form__submit btn" name="submit" type="submit" value="Send Message"/>
 
-					<div class="form__alert form__altert--success">
+					<div class="form__alert form__alert--success">
 						Message sent successfully!
 					</div>
-					<div class="form__alert form__altert--error">
+
+					<div class="form__alert form__alert--error">
 						Error, try again.
 					</div>
+
 				</fieldset>
 			</form>
 

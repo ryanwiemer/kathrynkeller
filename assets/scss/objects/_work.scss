@@ -14,6 +14,7 @@
 
 .page-header__categories li {
   display: inline-block;
+	letter-spacing: .1em;
 }
 
 .page-header__categories--current a {
@@ -22,6 +23,7 @@
 
 .page-header__categories .current-cat a {
   color: $base!important;
+
 }
 
 .page-header__categories a:hover {

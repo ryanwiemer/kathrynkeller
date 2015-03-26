@@ -5,35 +5,36 @@
 
 @font-face{
  font-family: 'Source Sans Pro';
- font-weight: normal;
+ font-weight: 200;
+ font-style: normal;
+ src: url('../fonts/sourcesanspro-Light-webfont.eot');
+ src: url('../fonts/sourcesanspro-Light-webfont?#iefix') format('embedded-opentype'),
+      url('../fonts/sourcesanspro-Light-webfont.woff') format('woff'),
+      url('../fonts/sourcesanspro-Light-webfont.ttf') format('truetype'),
+      url('../fonts/sourcesanspro-Light-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+ font-family: 'Source Sans Pro';
+ font-weight: 400;
  font-style: normal;
  src: url('../fonts/sourcesanspro-regular-webfont.eot');
  src: url('../fonts/sourcesanspro-regular-webfont?#iefix') format('embedded-opentype'),
       url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
       url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
-      url('../fonts/sourcesanspro-regular-webfont.svg#webfont') format('svg');
+      url('../fonts/sourcesanspro-regualr-webfont.svg#webfont') format('svg');
 }
+
 
 @font-face{
  font-family: 'Source Sans Pro';
- font-weight: bold;
+ font-weight: 800;
  font-style: normal;
  src: url('../fonts/sourcesanspro-Semibold-webfont.eot');
  src: url('../fonts/sourcesanspro-Semibold-webfont?#iefix') format('embedded-opentype'),
       url('../fonts/sourcesanspro-Semibold-webfont.woff') format('woff'),
       url('../fonts/sourcesanspro-Semibold-webfont.ttf') format('truetype'),
       url('../fonts/sourcesanspro-Semibold-webfont.svg#webfont') format('svg');
-}
-
-@font-face{
- font-family: 'Source Serif Pro';
- font-weight: normal;
- font-style: normal;
- src: url('../fonts/sourceserifpro-regular-webfont.eot');
- src: url('../fonts/sourceserifpro-regular-webfont?#iefix') format('embedded-opentype'),
-      url('../fonts/sourceserifpro-regular-webfont.woff') format('woff'),
-      url('../fonts/sourceserifpro-regular-webfont.ttf') format('truetype'),
-      url('../fonts/sourceserifpro-regular-webfont.svg#webfont') format('svg');
 }
 
 
@@ -46,10 +47,6 @@
       url('../fonts/icons.woff') format('woff'),
       url('../fonts/icons.ttf') format('truetype'),
       url('../fonts/icons.svg#webfont') format('svg');
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: $serif;
 }
 
 body {

@@ -29,8 +29,10 @@
   position: relative;
   line-height: 1.2;
   padding: 0 .5em .2em;
+  letter-spacing: .1em;
+  font-weight: 400;
 }
 
 .page-header__subtitle {
-  font-family: $sans;
+  letter-spacing: .1em;
 }

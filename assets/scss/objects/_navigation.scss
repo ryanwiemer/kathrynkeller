@@ -7,20 +7,18 @@
 	background: white;
 	z-index: 99;
 	position: relative;
-	//border-bottom: 1px solid $secondary;
 }
 
 .site-header__logo {
 	font-family: $sans;
 	line-height: 65px;
-	font-size: 22px;
-	font-weight: bold;
-	text-transform: uppercase;
+	font-size: 1.35em;
 	display: inline-block;
 	float: left;
 	height: 65px;
-	letter-spacing: 1px;
+	letter-spacing: .225em;
 	margin-left: .9em;
+	font-weight: 400;
 }
 
 .site-header__logo:hover, .nav-toggle:hover {
@@ -47,38 +45,19 @@
 .site-header__nav li a {
 	text-transform: titlecase;
 	font-size: 16px;
+	letter-spacing: .1em;
 	font-family: $sans;
-	border-top: 1px solid $secondary;
 	display: block;
 	background: white;
 	text-align: center;
-	line-height: 64px;
+	line-height: 65px;
 	position: relative;
 	text-decoration: none;
+	border-top: 1px solid $secondary;
 	@include bp(medium) {
 		border: none;
 		background: none;
-	&:before {
-		content: "";
-	  position: absolute;
-	  width: 100%;
-	  height: 1px;
-	  bottom: 22px;
-	  left: 0;
-	  background-color: $base;
-	  visibility: hidden;
-	  -webkit-transform: scaleX(0);
-	  transform: scaleX(0);
-	  -webkit-transition: all 0.2s ease-in-out 0s;
-	  transition: all 0.2s ease-in-out 0s;
-		}
 	}
-}
-
-.site-header__nav li a:hover:before {
-	//visibility: visible;
-  //-webkit-transform: scaleX(1);
-  //transform: scaleX(1);
 }
 
 .site-header__nav .active a {
@@ -87,7 +66,7 @@
 
 .site-header__nav li {
 	@include bp(medium) {
-		margin-left: 40px;
+		margin-left: 30px;
 		display: inline-block;
 	}
 }
@@ -119,7 +98,6 @@
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
-  //position: absolute;
   display: block;
   overflow: hidden;
   zoom: 1;

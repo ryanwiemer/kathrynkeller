@@ -134,14 +134,6 @@ function fixed_img_caption_shortcode($attr, $content = null) {
     . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></p>';
   }
 
-//Removing Default Image Sizes Except For 'Large'
-function trickspanda_remove_default_image_sizes( $sizes) {
-  //unset( $sizes['thumbnail']);
-  //unset( $sizes['medium']);
-  //unset( $sizes['large']);
-  return $sizes;
-}
-add_filter('intermediate_image_sizes_advanced', 'trickspanda_remove_default_image_sizes');
 
 ///////////////////////////
 //Theme Specific Functions/
@@ -152,6 +144,17 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+//Exclude Archive Category from the main loop
+add_action( 'pre_get_posts', 'exclude_specific_cats' );
+function exclude_specific_cats( $wp_query ) {
+	if( !is_admin() && is_main_query() && is_home() ) {
+		$wp_query->set( 'cat', '-6' );
+	}
+}
+
+
+
 
 ////////////////////////
 //CSS & JS Scripts//////

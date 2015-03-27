@@ -3,7 +3,7 @@
  * -------- */
 
 .home .site-footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -14,8 +14,9 @@
   margin: 0 auto;
   padding: 0;
 }
+
 .home .site-header {
-  position: absolute;
+  position: fixed;
   z-index: 99;
 }
 
@@ -29,7 +30,7 @@
   width: 100%;
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 
@@ -52,7 +53,7 @@
 .slide__title {
   font-size: 2em;
   letter-spacing: .1em;
-  line-height: 1.2;
+  line-height: 1.1;
   @include bp(medium) {
     font-size: 2.5em;
   }
@@ -86,7 +87,7 @@
 .flickity-prev-next-button {
   width: 2em;
   height: 2em;
-  position: absolute;
+  position: fixed;
   z-index: 99;
   &:hover .arrow{
     fill: white;
@@ -130,7 +131,6 @@ http://flickity.metafizzy.co
 }
 
 .flickity-slider {
-  position: absolute;
   width: 100%;
   height: 100%;
 }

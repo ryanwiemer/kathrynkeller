@@ -87,6 +87,7 @@
   width: 2em;
   height: 2em;
   position: absolute;
+  z-index: 99;
   &:hover .arrow{
     fill: white;
   }

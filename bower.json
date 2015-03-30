@@ -18,10 +18,9 @@
     "jquery": "~2.1.1",
     "responsive-nav": "~1.0.32",
     "picturefill": "~2.3.0",
-    "flickity": "~1.0.0",
-    "salvattore": "rnmp/salvattore#~1.0.7"
-  },
-  "resolutions": {
-    "picturefill": "~2.3.0"
+    "salvattore": "rnmp/salvattore#~1.0.7",
+    "bower": "*",
+    "install": "~1.0.4",
+    "slick-carousel": "kenwheeler/slick#~1.4.1"
   }
 }

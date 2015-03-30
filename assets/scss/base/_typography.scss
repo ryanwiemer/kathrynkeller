@@ -61,7 +61,4 @@ html {
   @include bp(medium) {
     font-size: 125%;
   }
-  @include bp(large) {
-    //font-size: 137.5%;
-  }
 }

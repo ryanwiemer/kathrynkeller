@@ -16,7 +16,7 @@ get_header(); ?>
 		<figure class="slide" style="background-image: url('<?php echo $large[0]; ?>');">
 				<div class="slide__info">
 					<h2 class="slide__title"><?php the_sub_field('title'); ?></h2>
-					<p class="slide__excerpt">
+					<p class="slide__description">
 						<?php the_sub_field('description'); ?>
 					</p>
 					<a class="slide__link" href="<?php the_sub_field('link'); ?>">

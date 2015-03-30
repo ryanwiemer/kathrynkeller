@@ -18,7 +18,7 @@
 }
 
 .header--single__title {
-	font-size: 2.5em;
+	font-size: 2em;
 	margin-bottom: .25em;
 	display: inline-block;
 }
@@ -69,66 +69,55 @@
 	}
 }
 
-//Single Navigation
+//Single Arrows
 .single__nav {
-	@extend %clearfix;
-	background: white;
-	position: relative;
-	top: 2em;
-	border-bottom: 1px solid darken($secondary, 10%);
-	width: 100%;
-	@include bp(medium) {
-		position: static;
-		border: none;
-	}
+  background: white;
+  width: 100%;
+  @extend %clearfix;
+  margin-top: 2em;
+  margin-bottom: -2em;
+  height: 50px;
+  border-bottom: 1px solid $secondary;
+  @include bp(medium) {
+    position: absolute;
+    top: 50%;
+    margin: -25px 0 0 0;
+    background: none;
+    border: none;
+
+  }
 }
 
-.single__nav a[rel="prev"], .single__nav a[rel="next"] {
-	fill: gray;
-	height: 3em;
-	padding: 1em;
-	display: block;
-	width: 50%;
-	& svg {
-		width: 1em;
-		display: block;
-		margin: 0 auto;
-	}
-	@include bp(medium) {
-		border-radius: 2px;
-		position: absolute;
-		top: 50%;
-		margin-top: -1em;
-		width: 2em;
-		height: 2em;
-		border-radius: 2px;
-		padding: .5em;
-	}
-	&:hover {
-		fill: $base;
-		@include bp(medium) {
-			fill: $base;
-		}
-	}
+.single__nav a {
+  width: 50%;
+  line-height: 50px;
+  position: absolute;
+  font-family: $icons;
+  color: gray;
+  font-size: 1em;
+  &:hover {
+    color: $base;
+  }
+  @include bp(medium) {
+    width: auto;
+  }
 }
 
 .single__nav a[rel="prev"] {
-	right: .5em;
-	float: right;
-	border-left: 1px solid darken($secondary, 10%);
-	@include bp(medium) {
-		border: none;
-	}
+  left: 0;
+  border-right: 1px solid $secondary;
+  @include bp(medium) {
+    left: .75em;
+  }
 }
-
 .single__nav a[rel="next"] {
-	border-right: 1px solid darken($secondary, 10%);
-	left: .5em;
-	@include bp(medium) {
-		border: none;
-	}
+  right: 0;
+  border-left: 1px solid $secondary;
+  @include bp(medium) {
+    right: .75em;
+  }
 }
 
 .single__nav a:nth-of-type(2) {
-	border-right: none;
+	border-left: none;
 }

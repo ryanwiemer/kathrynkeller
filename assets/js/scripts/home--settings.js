@@ -1,11 +1,13 @@
 //Homepage Settings
 
-$('.carousel').flickity({
-  // options
-  cellAlign: 'left',
-  autoPlay: 5000,
-  pageDots: false,
-  percentPosition: true,
-  cellSelector: '.slide',
-  wrapAround: true
-}).focus();
+$('.carousel').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  arrrows: true,
+  accessibility: true,
+  prevArrow: "<button class='arrow-prev'>&#xe601;</button>",
+  nextArrow: "<button class='arrow-next'>&#xe602;</button>"
+});

@@ -31,7 +31,7 @@ gulp.task('browser-sync', function() {
 
 // Move And Minfiy Scripts From Bower
 gulp.task ('move', function() {
-    gulp.src(['bower_components/picturefill/dist/picturefill.min.js','bower_components/jquery/dist/jquery.min.js','bower_components/responsive-nav/responsive-nav.min.js','bower_components/jquery-validate/dist/jquery.validate.min.js','bower_components/jquery-form/jquery.form.js','bower_components/salvattore/dist/salvattore.js','bower_components/flickity/dist/flickity.pkgd.js'])
+    gulp.src(['bower_components/picturefill/dist/picturefill.min.js','bower_components/jquery/dist/jquery.min.js','bower_components/responsive-nav/responsive-nav.min.js','bower_components/jquery-validate/dist/jquery.validate.min.js','bower_components/jquery-form/jquery.form.js','bower_components/salvattore/dist/salvattore.js','bower_components/slick-carousel/slick/slick.js'])
 	    .pipe(gulp.dest('assets/js/vendor/'));
 });
 
@@ -53,7 +53,7 @@ gulp.task('concat', function() {
       .pipe(concat('contact.min.js'))
   		.pipe(uglify())
       .pipe(gulp.dest('assets/js/'));
-    gulp.src(['assets/js/vendor/flickity.pkgd.js','assets/js/scripts/home--settings.js'])
+    gulp.src(['assets/js/vendor/slick.js','assets/js/scripts/home--settings.js'])
       .pipe(concat('home.min.js'))
     	.pipe(uglify())
     	.pipe(gulp.dest('assets/js/'));
@@ -69,7 +69,7 @@ gulp.task('sass', function() {
       .pipe(sass({
           includePaths: require('node-neat').includePaths
        }))
-      .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+      .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1'))
       .pipe(minifycss())
       .pipe(rename({ suffix: '.min' }))
       .pipe(gulp.dest('assets/css/'))

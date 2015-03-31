@@ -56,11 +56,11 @@ get_header(); ?>
 					<input class="form__submit btn" name="submit" type="submit" value="Send Message"/>
 
 					<div class="form__alert form__alert--success">
-						Message sent successfully!
+							Message sent successfully!
 					</div>
 
 					<div class="form__alert form__alert--error">
-						Error, try again.
+							Error, try again.
 					</div>
 
 				</fieldset>

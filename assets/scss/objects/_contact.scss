@@ -16,16 +16,19 @@
   @extend %clearfix;
   @include bp (medium) {
     @include span-columns(8);
+    margin-right: 0;
   }
 }
 
 .form label {
+  font-size: .9em;
   display: block;
   margin-bottom: .25em;
 }
 
 .form input {
   height: 40px;
+  border: 0;
 }
 
 .form textarea {
@@ -67,21 +70,23 @@
   height: 400px;
   resize: none;
   -webkit-appearance: none;
+  font-family: $sans;
 }
 
 
 .form__submit {
+  font-family: $sans;
   width: auto!important;
   float: left;
   cursor: pointer;
   background: $base;
   color: white;
-  border: 0;
+  border: none;
   outline: 0;
-  font-size: .8em;
+  font-size: .9em!important;
   display: block;
-  height: 40px!important;
-  padding: 0 1em;
+  line-height: 40px;
+  padding: 0 .75em 0 .75em!important;
   margin-bottom: 0!important;
   margin-right: 1em;
   &:hover {
@@ -89,22 +94,25 @@
   }
 }
 
-//Error Messageing
+//Error & Success Overlay
 .error {
   border: 1px solid red!important;
 }
 
 .form__alert {
+  position: relative;
+  top: .6em;
   float: left;
-  padding: .5em .25em;
+  display: inline-block;
+}
+
+
+.form__alert--success {
+  color: green;
 }
 
 .form__alert--error {
   color: red;
-}
-
-.form__alert--success {
-  color: green;
 }
 
 .form__alert--error, .form__alert--success {

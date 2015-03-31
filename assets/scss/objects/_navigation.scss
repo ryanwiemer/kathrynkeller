@@ -6,7 +6,6 @@
 	width: 100%;
 	background: white;
 	z-index: 99;
-	position: relative;
 }
 
 .site-header__logo {
@@ -18,7 +17,6 @@
 	height: 65px;
 	letter-spacing: .2em;
 	margin-left: .65em;
-	font-weight: 400;
 }
 
 .site-header__logo:hover, .nav-toggle:hover {
@@ -53,7 +51,7 @@
 	line-height: 65px;
 	position: relative;
 	text-decoration: none;
-	border-top: 1px solid $secondary;
+	border-top: 1px solid darken($secondary, 5%);
 	@include bp(medium) {
 		border: none;
 		background: none;

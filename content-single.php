@@ -16,8 +16,8 @@
 			</div>
 		<?php endif; ?>
 			<div class="single__nav">
-				<?php previous_post_link('%link','&#xe601;'); ?>
-				<?php next_post_link('%link','&#xe602;'); ?>
+				<?php previous_post_link('%link','&#xe804;'); ?>
+				<?php next_post_link('%link','&#xe805;'); ?>
 			</div>
 	</header>
 

@@ -7,7 +7,6 @@
   padding: 1em;
   max-width: $container;
   @extend %clearfix;
-
 }
 
 //Page Header
@@ -23,16 +22,17 @@
 }
 
 .page-header__title {
-  font-size: 2.5em;
+  font-size: 2.25em;
   margin: 0 auto;
   padding-bottom: 0;
   position: relative;
   line-height: 1.2;
   padding: 0 .5em .2em;
-  letter-spacing: .1em;
-  font-weight: 400;
+  letter-spacing: .05em;
 }
 
 .page-header__subtitle {
-  letter-spacing: .1em;
+  font-size: 1em;
+  letter-spacing: .05em;
+  text-transform: capitalize;
 }

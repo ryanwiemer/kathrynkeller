@@ -1,36 +1,32 @@
 /* -------- *
  *  Footer  *
  * -------- */
-
 .site-footer {
   background: $base;
   color: gray;
   font-family: $sans;
-  font-weight: normal;
   clear: both;
   font-size: 16px;
   height: 65px;
   text-align: center;
-  @include bp(medium) {
-    line-height: 65px;
-  }
+  line-height: 65px;
 }
 
 .site-footer__container {
   padding: 14px 1em 0;
   @extend %clearfix;
-  @include bp(medium) {
-    margin: 0 auto;
-    padding: 0 1.2em;
-  }
+  margin: 0 auto;
+  padding: 0 1.2em;
 }
 
 .site-footer__copyright {
   font-size: 16px;
   margin-bottom: 5px;
-  @include bp(medium) {
+  display: none;
+  margin: 0;
+  @include bp(small) {
+    display: inline-block;
     float: right;
-    margin: 0;
   }
 }
 
@@ -38,7 +34,7 @@
   text-decoration: underline;
   text-align: center;
   color: gray;
-  @include bp(medium) {
+  @include bp(small) {
     float: left;
   }
   &:hover {

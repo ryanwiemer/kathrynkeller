@@ -8,6 +8,7 @@ $('.carousel').slick({
   slidesToShow: 1,
   arrrows: true,
   accessibility: true,
-  prevArrow: "<button class='arrow-prev'>&#xe601;</button>",
-  nextArrow: "<button class='arrow-next'>&#xe602;</button>"
+  fade: true,
+  prevArrow: "<button class='arrow-prev'>&#xe804;</button>",
+  nextArrow: "<button class='arrow-next'>&#xe805;</button>"
 });

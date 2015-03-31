@@ -13,6 +13,9 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
+  position: fixed!important;
+  top: 65px;
+  bottom: 65px;
 }
 
 .home .site-header {
@@ -22,7 +25,7 @@
 
 /* Carousel Slides */
 .carousel {
-  position: relative;
+  height: 100%!important;
 }
 
 .slide {
@@ -30,7 +33,7 @@
   width: 100%;
   background-size: cover;
   background-position: center center;
-  height: 100vh!important;
+  height: 100%;
   text-align: center;
 }
 
@@ -44,7 +47,7 @@
 .slide__info {
   display: inline-block;
   vertical-align: middle;
-  max-width: 80%;
+  max-width: 75%;
   color: white;
   display: inline-block;
   text-align: center;
@@ -86,7 +89,7 @@
 //Homepage Arrows
 .arrow-prev, .arrow-next {
   margin-top: -.75em;
-  position: absolute;
+  position: fixed;
   top: 50%;
   font-family: $icons;
   color: rgba(255,255,255,.8);
@@ -97,12 +100,13 @@
 }
 
 .arrow-prev {
-  left: .2em;
+  left: .4em;
 }
 
 .arrow-next {
-  right: .2em;
+  right: .4em;
 }
+
 
 /* Default Slick Settings */
 .slick-slider {
@@ -203,4 +207,11 @@
   display: block;
   height: auto;
   border: 1px solid transparent;
+}
+
+
+.slick-list,
+.slick-track,
+.slick-slide {
+  height: 100%;
 }

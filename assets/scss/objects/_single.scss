@@ -26,7 +26,8 @@
 .header--single__category, .header--single__category a {
 	text-align: center;
 	font-size: 1em;
-
+  z-index: 2;
+	position: relative;
 	span {
 		color: gray;
 	}
@@ -92,7 +93,6 @@
     margin: -25px 0 0 0;
     background: none;
     border: none;
-
   }
 }
 
@@ -108,10 +108,12 @@
   }
   @include bp(medium) {
     width: auto;
+		z-index: 2;
   }
 }
 
 .single__nav a[rel="prev"] {
+	position: absolute;
   left: 0;
   border-right: 1px solid darken($secondary, 5%);
   @include bp(medium) {
@@ -120,6 +122,7 @@
   }
 }
 .single__nav a[rel="next"] {
+	position: absolute;
   right: 0;
   border-left: 1px solid darken($secondary, 5%);
   @include bp(medium) {

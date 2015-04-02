@@ -2,18 +2,6 @@
  *  Typography  *
  * ------------ */
 
-
-@font-face{
- font-family: 'Source Sans Pro';
- font-weight: 200;
- font-style: normal;
- src: url('../fonts/sourcesanspro-Light-webfont.eot');
- src: url('../fonts/sourcesanspro-Light-webfont?#iefix') format('embedded-opentype'),
-      url('../fonts/sourcesanspro-Light-webfont.woff') format('woff'),
-      url('../fonts/sourcesanspro-Light-webfont.ttf') format('truetype'),
-      url('../fonts/sourcesanspro-Light-webfont.svg#webfont') format('svg');
-}
-
 @font-face{
  font-family: 'Source Sans Pro';
  font-weight: 400;
@@ -24,19 +12,6 @@
       url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
       url('../fonts/sourcesanspro-regualr-webfont.svg#webfont') format('svg');
 }
-
-
-@font-face{
- font-family: 'Source Sans Pro';
- font-weight: 800;
- font-style: normal;
- src: url('../fonts/sourcesanspro-Semibold-webfont.eot');
- src: url('../fonts/sourcesanspro-Semibold-webfont?#iefix') format('embedded-opentype'),
-      url('../fonts/sourcesanspro-Semibold-webfont.woff') format('woff'),
-      url('../fonts/sourcesanspro-Semibold-webfont.ttf') format('truetype'),
-      url('../fonts/sourcesanspro-Semibold-webfont.svg#webfont') format('svg');
-}
-
 
 @font-face{
  font-family: 'Icons';

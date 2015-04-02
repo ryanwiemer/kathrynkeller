@@ -13,6 +13,7 @@
 }
 
 .form {
+  letter-spacing: 1px;
   @extend %clearfix;
   @include bp (medium) {
     @include span-columns(8);
@@ -27,11 +28,13 @@
 }
 
 .form input {
+  letter-spacing: 1px;
   height: 40px;
   border: 0;
 }
 
 .form textarea {
+  letter-spacing: 1px;
   line-height: 1.4;
 }
 

@@ -11,7 +11,7 @@
 .site-header__logo {
 	font-family: $sans;
 	line-height: 65px;
-	font-size: 1.25em;
+	font-size: 1.35em;
 	display: inline-block;
 	float: left;
 	height: 65px;
@@ -44,6 +44,7 @@
 .site-header__nav li a {
 	text-transform: titlecase;
 	font-size: 16px;
+	letter-spacing: 1px;
 	font-family: $sans;
 	display: block;
 	background: white;
@@ -55,6 +56,9 @@
 	@include bp(medium) {
 		border: none;
 		background: none;
+		&:hover {
+			color: gray!important;
+		}
 	}
 }
 

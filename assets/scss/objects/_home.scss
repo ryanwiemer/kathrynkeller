@@ -65,6 +65,7 @@
 .slide__description {
   display: none;
   @include bp(medium) {
+    letter-spacing: 1px;
     line-height: 1.4;
     display: block;
     max-width: 400px;

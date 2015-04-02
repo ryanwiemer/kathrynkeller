@@ -15,7 +15,7 @@
 .page-header__categories li {
 	font-size: 1em;
   display: inline-block;
-	letter-spacing: .05em;
+	letter-spacing: 1px;
 }
 
 .page-header__categories--current a {
@@ -64,6 +64,7 @@
   right: 0;
   color: white;
   font-size: .9em;
+	letter-spacing: 1px;
   opacity: 0;
 }
 

@@ -21,11 +21,13 @@
 	font-size: 2em;
 	margin-bottom: .25em;
 	display: inline-block;
+	letter-spacing: .1em;
 }
 
 .header--single__category, .header--single__category a {
 	text-align: center;
 	font-size: 1em;
+	letter-spacing: 1px;
   z-index: 2;
 	position: relative;
 	span {

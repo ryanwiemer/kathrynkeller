@@ -86,18 +86,21 @@
 //Salvattore
 @media screen and (max-width: 480px){
     .work[data-columns]::before {
-        content: '1 .column.size-1of1';
+			color: white;
+      content: '1 .column.size-1of1';
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .work[data-columns]::before {
-        content: '2 .column.size-1of2';
+			color: white;
+      content: '2 .column.size-1of2';
     }
 }
 @media screen and (min-width: 769px) {
     .work[data-columns]::before {
-        content: '3 .column.size-1of3';
+			color: white;
+      content: '3 .column.size-1of3';
     }
 }
 

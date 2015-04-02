@@ -62,10 +62,6 @@
 	}
 }
 
-.site-header__nav .active a {
-	//color: darken( $secondary, 10% );
-}
-
 .site-header__nav li {
 	@include bp(medium) {
 		margin-left: 35px;

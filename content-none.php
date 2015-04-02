@@ -12,8 +12,7 @@
 
 		<?php if ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'kathrynkeller' ); ?></p>
-			<?php get_search_form(); ?>
+			<p><?php _e( 'Sorry, but no content was found', 'kathrynkeller' ); ?></p>
 
 		<?php else : ?>
 

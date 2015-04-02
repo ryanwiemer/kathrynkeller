@@ -5,16 +5,13 @@
 
 get_header(); ?>
 
-	<main class="site-content">
+<header class="page-header">
+	<h2 class="page-header__title">Error 404</h2>
+	<h3 class="page-header__subtitle">Page not found</h3>
+</header>
 
-		<header class="page__header">
-			<h2 class="page__title">404</h2>
-		</header>
-
-		<div class="page__content">
-			<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'kathrynkeller' ); ?></p>
-			<?php get_search_form(); ?>
-		</div>
+	<main class="page-content">
+			<p style="text-align: center;">Please ensure you have the correct URL and try again.</p>
 	</main>
 
 <?php get_footer(); ?>

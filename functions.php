@@ -153,6 +153,16 @@ function exclude_specific_cats( $wp_query ) {
 	}
 }
 
+//Remove Additional PictureFill Script From Plugin
+function mytheme_dequeue_scripts() {
+  wp_dequeue_script('picturefill');
+}
+add_action('wp_enqueue_scripts', 'mytheme_dequeue_scripts');
+
+
+
+
+
 
 
 

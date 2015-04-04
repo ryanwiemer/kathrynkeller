@@ -48,8 +48,8 @@ get_header(); ?>
 
 	<div class="work__pagination">
 	  <?php
-	    next_posts_link( 'Older Projects' );
-	    previous_posts_link( 'Newer Projects' );
+	    next_posts_link( 'Older Work' );
+	    previous_posts_link( 'Newer Work' );
 	  ?>
 	</div>
 

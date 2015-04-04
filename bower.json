@@ -21,6 +21,9 @@
     "salvattore": "rnmp/salvattore#~1.0.7",
     "bower": "*",
     "install": "~1.0.4",
-    "slick-carousel": "kenwheeler/slick#~1.4.1"
+    "slick-carousel": "~1.5.0"
+  },
+  "resolutions": {
+    "slick-carousel": "~1.5.0"
   }
 }

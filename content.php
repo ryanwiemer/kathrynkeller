@@ -18,6 +18,6 @@
 		}?>
 		<div>
 		<div class="project__overlay"></div>
-		<div class="project__caption">View Project</div>
+		<div class="project__caption">View Work</div>
 	</a>
 </article>

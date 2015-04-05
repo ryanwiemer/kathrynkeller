@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 	<header class="site-header">
 		<nav class="site-header__nav">
-			<a href="<?php echo get_site_url(); ?>"><h1 class="site-header__logo"><?php echo get_bloginfo('name'); ?></h1></a>
+			<a class="site-header__link" href="<?php echo get_site_url(); ?>"><h1 class="site-header__logo"><?php echo get_bloginfo('name'); ?></h1></a>
 			<?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => '', 'menu_class' => '') ); ?>
 		</nav>
 	</header>

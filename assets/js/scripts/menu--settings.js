@@ -13,3 +13,29 @@ var nav = responsiveNav(".site-header__nav ul",
   navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
   jsClass: "js", // String: 'JS enabled' class which is added to  element
 });
+
+$( document ).ready(function() {
+  $('.page-about .active a').click(function() {
+    return false;
+  });
+
+  $('.page-contact .active a').click(function() {
+    return false;
+  });
+
+  $('.blog .active a').click(function() {
+    return false;
+  });
+
+  $('.blog .current-cat a').click(function() {
+    return false;
+  });
+
+  $('.category .current-cat a').click(function() {
+    return false;
+  });
+
+  $('.home .site-header__link').click(function() {
+    return false;
+  });
+});

@@ -31,7 +31,7 @@ gulp.task('browser-sync', function() {
 
 // Move And Minfiy Scripts From Bower
 gulp.task ('move', function() {
-    gulp.src(['bower_components/picturefill/dist/picturefill.min.js','bower_components/jquery/dist/jquery.min.js','bower_components/responsive-nav/responsive-nav.min.js','bower_components/jquery-validate/dist/jquery.validate.min.js','bower_components/jquery-form/jquery.form.js','bower_components/salvattore/dist/salvattore.js','bower_components/slick-carousel/slick/slick.js'])
+    gulp.src(['bower_components/picturefill/dist/picturefill.min.js','bower_components/jquery/dist/jquery.min.js','bower_components/responsive-nav/responsive-nav.min.js','bower_components/jquery-validate/dist/jquery.validate.min.js','bower_components/jquery-form/jquery.form.js','bower_components/salvattore/dist/salvattore.js','bower_components/slick-carousel/slick/slick.js','bower_components/PACE/pace.min.js'])
 	    .pipe(gulp.dest('assets/js/vendor/'));
 });
 
@@ -45,7 +45,7 @@ gulp.task('scripts', function() {
 
 // Concat JS
 gulp.task('concat', function() {
-    gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/menu--settings.js'])
+    gulp.src(['assets/js/vendor/pace.min.js','assets/js/vendor/picturefill.min.js','assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/menu--settings.js'])
       .pipe(concat('global.min.js'))
       .pipe(uglify())
       .pipe(gulp.dest('assets/js/'));

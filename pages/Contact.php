@@ -53,7 +53,7 @@ get_header(); ?>
 						<input class="form__bot__input" name="bot" for="bot" placeholder="Spam filter (Leave blank)" type="text"/>
 					</div>
 
-					<input class="form__submit btn" name="submit" type="submit" value="Send Message"/>
+					<input class="form__submit" name="submit" type="submit" value="Send Message"/>
 
 					<div class="form__alert form__alert--success">
 							Message sent successfully!

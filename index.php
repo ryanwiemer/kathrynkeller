@@ -8,7 +8,7 @@ get_header(); ?>
 <header class="page-header">
 	<h2 class="page-header__title">Recent Work</h3>
 	<ul class="page-header__categories">
-		<li class="cat-item"><a href="<?php echo site_url(); ?>/work">All</a></li>
+		<li class="cat-item current-cat"><a href="<?php echo site_url(); ?>/work">All</a></li>
 		<?php
 		$uncatid = get_term_by( 'slug', 'uncategorized', 'category');
 		$uncatid = $uncatid->term_id;

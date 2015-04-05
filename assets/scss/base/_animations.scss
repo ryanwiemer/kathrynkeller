@@ -1,34 +1,46 @@
 /* ---------- *
 * Animations  *
 * ----------- */
-
-.site-header__nav li a {
-  @include transition (background 100ms ease-in-out);
- @include bp(medium) {
-   @include transition (color 100ms ease-in-out);
- }
-}
-
-.site-header__logo, .nav-toggle, .gallery__categories button, .header--single__category a {
-  @include transition (color 100ms ease-in-out);
-}
-
-.single__nav a {
-  @include transition (color 100ms ease-in-out);
+.site-header__nav li a, .single__nav a, .site-header__logo, .nav-toggle, .header--single__category a, .site-footer a, .form__submit, .slide__view-work, .arrow-prev, .arrow-next  {
+  @include transition (all 100ms ease-in-out);
 }
 
 .project__overlay, .project__caption {
   @include transition (opacity 200ms ease-in-out);
 }
 
-.form__submit {
-  @include transition (all 100ms ease-in-out);
-}
-
 .page-header__categories a {
   @include transition (all 200ms ease-in-out);
 }
 
-.slide__view-work, .flickity-prev-next-button .arrow {
-  @include transition (all 200ms ease-in-out);
+//Pace Loading
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: $base;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.js .site-header, .js .page-header, .js .page-content, .js .site-footer, .js .header--single {
+  opacity: 0;
+  @include transition (opacity 200ms linear);
+}
+
+.pace-done .site-header, .pace-done .page-header, .pace-done .page-content, .pace-done .site-footer, .pace-done .header--single {
+    opacity: 1;
 }

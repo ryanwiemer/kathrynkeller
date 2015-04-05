@@ -21,9 +21,7 @@
     "salvattore": "rnmp/salvattore#~1.0.7",
     "bower": "*",
     "install": "~1.0.4",
-    "slick-carousel": "~1.5.0"
-  },
-  "resolutions": {
-    "slick-carousel": "~1.5.0"
+    "slick-carousel": "~1.5.0",
+    "PACE": "HubSpot/pace#~1.0.2"
   }
 }

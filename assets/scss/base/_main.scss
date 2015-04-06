@@ -11,3 +11,7 @@ input, textarea {
   outline: none;
   border: none;
 }
+
+textarea {
+  overflow: auto;
+}

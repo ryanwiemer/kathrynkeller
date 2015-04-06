@@ -7,7 +7,7 @@ get_header(); ?>
 
 <header class="page-header">
 	<h2 class="page-header__title">About</h2>
-	<h3 class="page-header__subtitle">Learn About Kathryn Keller</h3>
+	<h3 class="page-header__subtitle">Kathryn Keller</h3>
 </header>
 
 <main class="page-content">

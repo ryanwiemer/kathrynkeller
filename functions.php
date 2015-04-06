@@ -91,12 +91,6 @@ function wpb_imagelink_setup() {
 }
 add_action('admin_init', 'wpb_imagelink_setup', 10);
 
-//Remove <p> Tags From Images
-function filter_ptags_on_images($content){
-  return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-  }
-  add_filter('the_content', 'filter_ptags_on_images');
-
 //Remove Image Dimensions
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
 add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );

@@ -10,32 +10,19 @@
 	}
 }
 
-.header--single {
-	background: $secondary;
-	position: relative;
-	padding: 2em 0;
-	text-align: center;
-}
-
-.header--single__title {
-	font-size: 2em;
-	margin-bottom: .25em;
-	display: inline-block;
-	letter-spacing: .1em;
-}
-
-.header--single__category, .header--single__category a {
+.page-header__category, .page-header__category a {
 	text-align: center;
 	font-size: 1em;
 	letter-spacing: 1px;
   z-index: 2;
+	line-height: 1;
 	position: relative;
 	span {
 		color: gray;
 	}
 }
 
-.header--single__category a  {
+.page-header__category a  {
 	text-decoration: underline;
 	color: gray;
 	&:hover {
@@ -43,38 +30,7 @@
 	}
 }
 
-.header--single__details {
-	max-width: 600px;
-	margin: .75em auto 0;
-	padding: 0 1em;
-	line-height: 1.4;
-	z-index: 2;
-	position: relative;
-}
-
-.header--single__details p {
-	max-width: 600px;
-	margin-bottom: 1em;
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
-.header--single__details a {
-	text-decoration: underline;
-	&:hover {
-		color: gray;
-	}
-}
-
-.single .site-content img {
-	margin-bottom: 1em;
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
-.single .site-content p {
+.single .page-content p {
 	line-height: 1.4;
 	margin-bottom: 1em;
 	&:last-child {
@@ -83,24 +39,24 @@
 }
 
 //Single Arrows
-.single__nav {
+.page-header__nav {
   background: white;
   width: 100%;
   @extend %clearfix;
-  margin-top: 2em;
-  margin-bottom: -2em;
+  margin-top: 2.5em;
+  margin-bottom: -2.5em;
   height: 50px;
   border-bottom: 1px solid darken($secondary, 5%);
   @include bp(medium) {
     position: absolute;
     top: 50%;
-    margin: -25px 0 0 0;
+    margin: -18px 0 0 0;
     background: none;
     border: none;
   }
 }
 
-.single__nav a {
+.page-header__nav a {
   width: 50%;
   line-height: 50px;
   position: absolute;
@@ -116,7 +72,7 @@
   }
 }
 
-.single__nav a[rel="prev"] {
+.page-header__nav a[rel="prev"] {
 	position: absolute;
   left: 0;
   border-right: 1px solid darken($secondary, 5%);
@@ -125,7 +81,7 @@
 		border: none;
   }
 }
-.single__nav a[rel="next"] {
+.page-header__nav a[rel="next"] {
 	position: absolute;
   right: 0;
   border-left: 1px solid darken($secondary, 5%);
@@ -135,6 +91,6 @@
   }
 }
 
-.single__nav a:nth-of-type(2) {
+.page-header__nav a:nth-of-type(2) {
 	border-left: none;
 }

@@ -36,7 +36,7 @@
   height: 2px;
 }
 
-.js .site-header, .js .page-header, .js .page-content, .js .site-footer, .js .header--single {
+.cssanimations .site-header, .cssanimations .page-header, .cssanimations .page-content, .cssanimations .site-footer, .cssanimations .header--single {
   opacity: 0;
   @include transition (opacity 200ms linear);
 }

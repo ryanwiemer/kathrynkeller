@@ -22,8 +22,16 @@
   }
 }
 
+.about__bio {
+  @include bp(medium) {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .about__statement {
-  margin-bottom: 0;
+  margin-bottom: -1em;
 }
 
 .about h3 {

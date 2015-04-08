@@ -37,10 +37,10 @@
 }
 
 .cssanimations .site-header, .cssanimations .page-header, .cssanimations .page-content, .cssanimations .site-footer, .cssanimations .header--single {
-  opacity: 0;
-  @include transition (opacity 200ms linear);
+  //opacity: .75;
+  //@include transition (opacity 200ms linear);
 }
 
 .pace-done .site-header, .pace-done .page-header, .pace-done .page-content, .pace-done .site-footer, .pace-done .header--single {
-    opacity: 1;
+  //opacity: 1;
 }

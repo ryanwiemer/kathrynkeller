@@ -6,8 +6,21 @@
 	margin: 1em auto;
 	max-width: 750px;
 	@include bp(medium) {
-		margin: 2em auto;
+		margin: 2em auto 1em;
 	}
+}
+
+.single strong {
+	font-weight: bold;
+}
+.single .site-header__nav {
+	//border-bottom: 1px solid darken($secondary, 5%);
+}
+
+.single .page-header {
+	margin: 0;
+	padding: 0;
+	height: 65px;
 }
 
 .page-header__category, .page-header__category a {
@@ -16,7 +29,7 @@
 	letter-spacing: 1px;
   z-index: 2;
 	line-height: 1;
-	position: relative;
+	display: none;
 	span {
 		color: gray;
 	}
@@ -48,11 +61,12 @@
   height: 50px;
   border-bottom: 1px solid darken($secondary, 5%);
   @include bp(medium) {
-    position: absolute;
+    position: fixed;
     top: 50%;
-    margin: -18px 0 0 0;
-    background: none;
+		left: 0;
+    margin: 10px auto 0;
     border: none;
+		background: none;
   }
 }
 
@@ -62,7 +76,7 @@
   position: absolute;
   font-family: $icons;
   color: gray;
-  font-size: 1em;
+  font-size: 1.5em;
   &:hover {
     color: $base;
   }

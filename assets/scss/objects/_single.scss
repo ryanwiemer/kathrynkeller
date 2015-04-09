@@ -3,24 +3,19 @@
  * -------- */
 
 .single .page-content {
-	margin: 1em auto;
+	margin: 2em auto 1em;
 	max-width: 750px;
-	@include bp(medium) {
-		margin: 2em auto 1em;
-	}
 }
 
 .single strong {
 	font-weight: bold;
-}
-.single .site-header__nav {
-	//border-bottom: 1px solid darken($secondary, 5%);
 }
 
 .single .page-header {
 	margin: 0;
 	padding: 0;
 	height: 65px;
+	background: none;
 }
 
 .page-header__category, .page-header__category a {
@@ -56,10 +51,9 @@
   background: white;
   width: 100%;
   @extend %clearfix;
-  margin-top: 2.5em;
-  margin-bottom: -2.5em;
-  height: 50px;
-  border-bottom: 1px solid darken($secondary, 5%);
+  margin-top: 3em;
+  margin-bottom: -2em;
+  height: 51px;
   @include bp(medium) {
     position: fixed;
     top: 50%;
@@ -77,10 +71,14 @@
   font-family: $icons;
   color: gray;
   font-size: 1.5em;
+	background: $secondary;
+	text-align: center;
+
   &:hover {
     color: $base;
   }
   @include bp(medium) {
+		background: none;
     width: auto;
 		z-index: 2;
   }
@@ -90,6 +88,7 @@
 	position: absolute;
   left: 0;
   border-right: 1px solid darken($secondary, 5%);
+	border-top: 1px solid darken($secondary, 5%);
   @include bp(medium) {
     left: .75em;
 		border: none;
@@ -98,6 +97,7 @@
 .page-header__nav a[rel="next"] {
 	position: absolute;
   right: 0;
+	border-top: 1px solid darken($secondary, 5%);
   border-left: 1px solid darken($secondary, 5%);
   @include bp(medium) {
     right: .75em;

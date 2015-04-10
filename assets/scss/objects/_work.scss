@@ -124,13 +124,14 @@
 
 .work__pagination {
   @extend %clearfix;
-	margin-top: 2em;
 }
 
 .work__pagination .btn-pagination--prev {
   float: right;
+	margin-top: 1em;
 }
 
 .work__pagination .btn-pagination--next {
   float: left;
+	margin-top: 1em;
 }

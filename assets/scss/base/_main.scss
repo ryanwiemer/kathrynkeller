@@ -15,3 +15,12 @@ input, textarea {
 textarea {
   overflow: auto;
 }
+
+
+.error404 .page-content:before {
+  height: 0;
+}
+
+.error404 .page-content {
+  margin-top: 2em;
+}

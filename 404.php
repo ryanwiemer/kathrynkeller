@@ -7,7 +7,6 @@ get_header(); ?>
 
 <header class="page-header">
 	<h2 class="page-header__title">Error 404</h2>
-	<h3 class="page-header__subtitle">Page not found</h3>
 </header>
 
 	<main class="page-content">

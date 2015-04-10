@@ -23,6 +23,7 @@
 }
 
 .about__bio {
+  margin-bottom: 2em;
   @include bp(medium) {
     p {
       margin-bottom: 0;
@@ -40,4 +41,5 @@
   margin-bottom: .5em;
   letter-spacing: .2em;
   text-transform: uppercase;
+  font-weight: bold;
 }

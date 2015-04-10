@@ -1,7 +1,7 @@
 /* ---------- *
 * Animations  *
 * ----------- */
-.site-header__nav li a, .single__nav a, .site-header__logo, .nav-toggle, .header--single__category a, .site-footer a, .form__submit, .slide__view-work, .arrow-prev, .arrow-next  {
+.site-header__nav li a, .single__nav a, .site-header__logo, .nav-toggle, .header--single__category a, .site-footer a, .form__submit, .slide__view-work, .arrow-prev, .arrow-next, .page-content a   {
   @include transition (all 100ms ease-in-out);
 }
 

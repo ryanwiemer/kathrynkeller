@@ -9,7 +9,7 @@
 
 .page-header__categories a {
   padding: 0 .5em;
-  //text-decoration: underline;
+	text-decoration: none;
 }
 
 .page-header__categories li {
@@ -42,6 +42,7 @@
 //Masonry Layout
 .work {
   @extend %clearfix;
+	margin-top: -65px;
 }
 
 .blog .page-content, .archive .page-content {
@@ -114,11 +115,16 @@
 //Gallery Pagination
 .work__pagination a {
   font-size: .9em;
-  text-decoration: underline;
+  text-decoration: none;
+	background: $base;
+	color: white;
+	padding: .5em;
+	border-radius: 2px;
 }
 
 .work__pagination {
   @extend %clearfix;
+	margin-top: 2em;
 }
 
 .work__pagination .btn-pagination--prev {

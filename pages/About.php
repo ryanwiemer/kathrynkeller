@@ -5,22 +5,16 @@
 */
 get_header(); ?>
 
-<header class="page-header">
-	<h2 class="page-header__title">About</h2>
-	<h3 class="page-header__subtitle">Kathryn Keller</h3>
-</header>
-
 <main class="page-content">
 	<div class="about">
-		<?php $large = wp_get_attachment_image_src(get_field('about_image'), 'large'); ?>
-		<?php $medium = wp_get_attachment_image_src(get_field('about_image'), 'medium'); ?>
-		<?php $thumb = wp_get_attachment_image_src(get_field('about_image'), 'thumbnail');
-		?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
 			<div class="about__image">
-				<img srcset="<?php echo $thumb[0]; ?> 375w, <?php echo $medium[0]; ?> 750w, <?php echo $large[0]; ?> 1500w">
+				<?php if ( has_post_thumbnail() ) {
+					the_post_thumbnail();}
+					else {
+					echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/img/placeholder.png" />';
+				}?>
 			</div>
 
 			<div class="about__bio">

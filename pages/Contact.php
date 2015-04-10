@@ -5,22 +5,13 @@
 */
 get_header(); ?>
 
-<header class="page-header">
-	<h2 class="page-header__title">Contact</h2>
-	<h3 class="page-header__subtitle">Get in touch with the artist</h3>
-
-</header>
-
 <main class="page-content">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php the_content(); ?>
-
-			<?php $large = wp_get_attachment_image_src(get_field('contact_image'), 'large'); ?>
-			<?php $medium = wp_get_attachment_image_src(get_field('contact_image'), 'medium'); ?>
-			<?php $thumb = wp_get_attachment_image_src(get_field('contact_image'), 'thumbnail'); ?>
-			<div class="contact-image" style="background-image: url('<?php echo $large[0]; ?>')"></div>
+			<div class="contact-info">
+				<?php the_content(); ?>
+			</div>
 
 			<form class="form" method="post" name="contact" autocomplete="off">
 				<fieldset>

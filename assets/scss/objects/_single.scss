@@ -5,6 +5,9 @@
 .single .page-content {
 	margin: 2em auto 1em;
 	max-width: 750px;
+	&:before {
+		height: 0;
+	}
 }
 
 .single strong {
@@ -44,6 +47,10 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+
+	&:nth-child(3) {
+		margin-bottom: 0;
+	}
 }
 
 //Single Arrows
@@ -73,6 +80,7 @@
   font-size: 1.5em;
 	background: $secondary;
 	text-align: center;
+	text-decoration: none;
 
   &:hover {
     color: $base;

@@ -23,7 +23,6 @@ get_header(); ?>
 						<div class="slide__view-work">View Work</div>
 					</a>
 				</div>
-				<div class="slide__overlay"></div>
 		</figure>
 	<?php endwhile; ?>
 	<?php endif; ?>

@@ -18,13 +18,16 @@
 	letter-spacing: 1px;
 }
 
+.archive .page-content, .blog .page-content {
+	margin-top: 1.5em;
+}
+
 .page-header__categories--current a {
   color: darken( $secondary, 20% );
 }
 
 .page-header__categories .current-cat a {
   color: $base!important;
-
 }
 
 .page-header__categories a:hover {

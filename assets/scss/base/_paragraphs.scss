@@ -7,3 +7,7 @@ p {
   line-height: 1.6;
   letter-spacing: 1px;
 }
+
+.single p, .about p, .contact-info p, .form input, .form textarea{
+  color: lighten($base, 5%);
+}

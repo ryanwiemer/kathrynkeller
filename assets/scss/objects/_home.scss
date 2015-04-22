@@ -40,6 +40,16 @@
   vertical-align: middle;
 }
 
+.slide__overlay {
+  background: $base;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: .2;
+}
+
 .slide__info {
   display: inline-block;
   vertical-align: middle;
@@ -47,6 +57,8 @@
   color: white;
   display: inline-block;
   text-align: center;
+  z-index: 99;
+  position: relative;
 }
 
 .slide__title {

@@ -1,6 +1,6 @@
 {
   "name": "kathrynkeller",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "authors": [
     "Ryan Wiemer <ryan@ryanwiemer.com>"
   ],
@@ -22,6 +22,7 @@
     "bower": "*",
     "install": "~1.0.4",
     "slick-carousel": "~1.5.0",
-    "PACE": "HubSpot/pace#~1.0.2"
+    "PACE": "HubSpot/pace#~1.0.2",
+    "outlayer": "~1.4.0"
   }
 }

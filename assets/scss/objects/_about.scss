@@ -23,16 +23,16 @@
 
 .about__bio {
   margin-bottom: 2em;
+  p {
+    margin-bottom: 0;
+  }
   @include bp(medium) {
     margin-bottom: 0;
   }
 }
 
 .about__statement {
-  margin-bottom: -1em;
-  p {
-    margin-bottom: 0;
-  }
+  margin-bottom: -2em;
   @include bp(medium) {
     @include shift(.5);
   }
@@ -44,5 +44,4 @@
   margin-bottom: .5em;
   letter-spacing: .15em;
   text-transform: uppercase;
-  //font-weight: 600;
 }

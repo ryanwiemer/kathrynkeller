@@ -27,11 +27,11 @@
 }
 
 .page-header__categories .current-cat a {
-  color: $base!important;
+  color: lighten( $base, 10% )!important;
 }
 
 .page-header__categories a:hover {
-  color: $base!important;
+  color: lighten( $base, 10% )!important;
 }
 
 .page-header__categories:hover a {

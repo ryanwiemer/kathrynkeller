@@ -13,7 +13,7 @@
 .about__statement, .about__bio {
   margin-bottom: 1em;
   @include bp(medium) {
-    @include span-columns(6);
+    @include span-columns(5.75);
     margin-bottom: 0;
   }
   p {
@@ -24,21 +24,25 @@
 .about__bio {
   margin-bottom: 2em;
   @include bp(medium) {
-    p {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
   }
 }
 
 .about__statement {
   margin-bottom: -1em;
+  p {
+    margin-bottom: 0;
+  }
+  @include bp(medium) {
+    @include shift(.5);
+  }
 }
 
 .about h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   text-align: center;
   margin-bottom: .5em;
-  letter-spacing: .2em;
+  letter-spacing: .15em;
   text-transform: uppercase;
-  font-weight: 600;
+  //font-weight: 600;
 }

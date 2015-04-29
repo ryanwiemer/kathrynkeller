@@ -95,6 +95,10 @@
 	@include bp(medium) {
 		display: none;
 	}
+	&:hover {
+		color: $base;
+	}
+
 }
 
 .js .nav-collapse {
